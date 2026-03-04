@@ -1,0 +1,85 @@
+baseURL = "https://benny-k.com/"
+languageCode = "en-AU"
+title = "Ben Karciauskas"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  title = "Ben Karciauskas"
+  description = "I love exploring what's next in AI and technology, whether that means tinkering with databases, building fun demos, or just figuring out clever solutions to tricky problems. Outside work you'll usually find me mountain biking, gaming (Minecraft is a favorite), or hanging out with my kids."
+  author = "Ben Karciauskas"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "G'day, I'm Ben"
+    Content = "I love exploring what's next in AI and technology, whether that means tinkering with databases, building fun demos, or just figuring out clever solutions to tricky problems. Outside work you'll usually find me mountain biking, gaming (Minecraft is a favourite), or hanging out with my kids."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/chowgi"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/benkarciauskas"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"

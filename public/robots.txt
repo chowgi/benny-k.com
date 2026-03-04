@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://benny-k.com/sitemap.xml
