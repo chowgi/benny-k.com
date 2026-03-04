@@ -6,36 +6,31 @@ draft: true
 summary: "My blog was costing me money to serve 17 visitors a month. That felt stupid. So I moved to Hugo and GitHub Pages in about an hour."
 ---
 
-My WordPress blog had 17 visitors in December. I was paying for hosting. Something about that equation bothered me.
-
-Look, WordPress is fine. It does what it does. But I've had a personal blog sitting there since early 2024, posting maybe once every few months, and the whole setup felt heavy for what it was. A CMS, a database, plugins I never update, a theme I picked in 5 minutes and never touched again. All to serve a handful of markdown posts to almost nobody.
-
-So I moved the whole thing to Hugo and GitHub Pages. It took about an hour. This is how it went.
+My Premium WordPress blog had 17 visitors in December. WordPress is fine. It does what it does. But I've had a personal blog sitting there since early 2024, posting maybe once every few months, and the whole setup felt heavy for what it was. So I moved the whole thing to Hugo and GitHub Pages. With OpenClaw, my assistant, it took about 15 minutes. This is how it went.
 
 ## Why I moved
 
 Three reasons. None of them are earth-shattering.
 
-**It costs nothing.** GitHub Pages is free. My domain registration is about $14 a year and that's the total cost. WordPress was charging me for hosting on top of that. For a site that gets double-digit monthly traffic, paying for hosting felt like buying a gym membership I never use.
+**It costs nothing.** GitHub Pages is free. WordPress was charging me for hosting on top of that. For a site that gets double-digit monthly traffic, paying for hosting felt like buying a gym membership I never use.
 
-**I already live in markdown and git.** I write everything in markdown. My notes, my docs, my presentations. Having a blog that wants me to log into a web admin panel and use a block editor is friction I don't need. With Hugo, a blog post is a markdown file. I push to git. The site rebuilds. Done.
+**I already live in markdown and git.** I now write everything in markdown primarily because of my OpenClaw assistant that I've been building. My notes, my docs, my presentations. Having a blog that wants me to log into a web admin panel and use a block editor is friction I don't need.
 
-**I wanted my AI assistant to be able to publish for me.** This is the real one. I've been running an AI agent that handles a bunch of my daily workflow — email, task management, research, document drafting. If my blog is just a git repo with markdown files, the agent can draft posts, commit them, and push. No WordPress API, no authentication tokens, no plugins. Just git push.
+**I wanted my AI assistant to be able to publish for me.** This is the real one. I've been running an AI agent that handles a bunch of my daily workflow — email, task management, research, document drafting. If my blog is just a git repo with markdown files, I can draft posts in my own words, then get Claude to help refine them a little bit. It's an iterative process, and she can commit them, push, and it's done. the agent can draft posts, commit them, and push. No WordPress API, no authentication tokens, no plugins. Just git push.
 
 ## How I did it
 
 I'm not going to write a step-by-step tutorial — there are plenty of those. But here's roughly what happened:
 
-**Hugo setup:** Installed Hugo, created a new site, picked the PaperMod theme because it's clean and fast and I didn't want to spend three hours comparing themes. Configured `hugo.toml` with my details. Took maybe 10 minutes.
+**Hugo setup:** this was Claudia's suggestion. I had no idea what Hugo is, but we installed Hugo, created a new site, picked the PaperMod theme because it's clean and fast and I didn't want to spend three hours comparing themes. Configured `hugo.toml` with my details. Took maybe 10 minutes.
 
-**Post migration:** I had 10 posts on WordPress. Fetched each one, converted to markdown with proper frontmatter (title, date, tags), downloaded the images, and dropped them into Hugo's content folder. Each post lives in its own directory with its images alongside it — Hugo calls these "page bundles" and it keeps things tidy.
+**Post migration:** I had 10 posts on WordPress. I got Claude to fetch each one converted to markdown with proper frontmatter (title, date, tags), downloaded the images, and dropped them into Hugo's content folder. Each post lives in its own directory with its images alongside it — Hugo calls these "page bundles" and it keeps things tidy.
 
-**GitHub repo:** Created a repo, added a GitHub Actions workflow that builds the Hugo site and deploys to GitHub Pages on every push to main. The workflow file is about 40 lines of YAML that I'll never touch again.
+**GitHub repo:** clawdia created a repo, added a GitHub Actions workflow that builds the Hugo site and deploys to GitHub Pages on every push to main. The workflow file is about 40 lines of YAML that I'll never touch again.
 
 **DNS:** Pointed my domain's A records to GitHub's IPs, added a CNAME for www, typed the domain into GitHub Pages settings, and waited 20 minutes for the TLS certificate to provision. That was the only part that required any patience.
 
-The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour. And honestly, most of that was downloading images from WordPress.
-
+The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour in between doing my day job. And honestly, most of that was wranging the github and word press interfaces.
 ## What I actually did vs. what I just described
 
 I should be honest here. When I said "I did this," what I mean is I told my AI assistant to do it and then approved the output. Clawdia set up Hugo, migrated the posts, created the GitHub repo, configured the deployment pipeline, and pushed. I pointed DNS and clicked a few buttons in GitHub settings.
