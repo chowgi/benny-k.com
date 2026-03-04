@@ -6,6 +6,8 @@ draft: false
 slug: "exploring-options-rag-vs-fine-tuning"
 ---
 
+![RAG vs Fine-Tuning comparison](rag-vs-finetuning-screenshot.png)
+
 Retrieval-Augmented Generation (RAG) seems to be the new cool thing in the fast-changing world of generative AI, especially in language models.
 
 I've been really getting into [LlamaIndex](https://www.llamaindex.ai/) lately, and I've noticed that sometimes the answers my apps give aren't as good as I'd like. Is it because of how I made the app, or should I try fine-tuning instead? Maybe I just need to use more specific and better prompts? I've decided to dig deeper into this.

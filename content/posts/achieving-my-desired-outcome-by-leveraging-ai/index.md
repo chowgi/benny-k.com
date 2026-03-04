@@ -4,6 +4,10 @@ date: 2024-03-11
 tags: [ai, productivity, personal]
 draft: false
 slug: "achieving-my-desired-outcome-by-leveraging-ai"
+cover:
+  image: "leverage.webp"
+  alt: "Achieving My Desired Outcome by Leveraging AI"
+  relative: true
 ---
 
 I recently conducted a poll on LinkedIn, asking how often people use AI in their daily lives. The results were interesting, but what struck me the most was the response rate. Out of over 700+ impressions, only 17 people responded. This got me thinking — is it that people don't care for polls, or is it me, or perhaps most people just don't care about AI?

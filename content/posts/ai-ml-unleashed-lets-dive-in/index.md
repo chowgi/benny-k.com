@@ -6,6 +6,8 @@ draft: false
 slug: "ai-ml-unleashed-lets-dive-intest-post"
 ---
 
+![AI and Machine Learning](image.png)
+
 Hey there, tech explorers! Welcome to the wild world of AI and Machine Learning — where algorithms rule, data talks, and the future is now! 🚀💻
 
 Join me on this exciting journey as we unravel the mysteries of AI and ML. From self-driving cars to personalised recommendations, we'll explore the cool stuff these technologies can do.

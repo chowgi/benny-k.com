@@ -6,6 +6,8 @@ draft: false
 slug: "insights-from-my-deep-learning-journey"
 ---
 
+![Owl classification model training results](image-1.png)
+
 Recently, three owls decided to make their home in our garden. It's been a hoot (sorry, had to) getting to know these fascinating creatures. My fascination with them sparked the idea for my first ever machine learning application.
 
 I had spent the last month or so working my way through the ["Practical Deep Learning for Coders"](https://course.fast.ai/) course by Fastai. The field seemed daunting, with its complex mathematical underpinnings and the perception that only tech giants like Google and Facebook could harness its power. However, as I progressed through the course, I discovered that many of my preconceptions were unfounded.
@@ -21,6 +23,8 @@ I was able to build, train, and use my owl classification app in under an hour w
 ## You don't need huge amounts of data
 
 One of the biggest misconceptions I had was that deep learning required massive datasets, accessible only to large corporations. I was amazed to discover that I could train my own owl classification model using just a few hundred images downloaded from the internet. The course provided numerous examples demonstrating that practical models can be built with relatively small datasets.
+
+![Training results with small dataset](image-2.png)
 
 ## You don't need expensive supercomputers
 

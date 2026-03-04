@@ -4,6 +4,10 @@ date: 2024-04-15
 tags: [ai, databricks, enterprise, generative-ai]
 draft: false
 slug: "enterprise-ready-production-gen-ai-with-databricks"
+cover:
+  image: "databricks-gen-ai.webp"
+  alt: "Enterprise Ready Production Gen AI with Databricks"
+  relative: true
 ---
 
 ## The Rise of Private Generative AI and the Need for Enterprise Tools
