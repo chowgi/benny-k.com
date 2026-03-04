@@ -6,7 +6,7 @@ draft: true
 summary: "My blog was costing me money to serve 17 visitors a month. That felt stupid. So I moved to Hugo and GitHub Pages in about an hour."
 ---
 
-My Premium WordPress blog had 17 visitors in December. WordPress is fine. It does what it does. But I've had a personal blog sitting there since early 2024, posting maybe once every few months, and the whole setup felt heavy for what it was. So I moved the whole thing to Hugo and GitHub Pages. With OpenClaw, my assistant, it took about 15 minutes. This is how it went.
+My Premium WordPress blog had 17 visitors in December. WordPress is fine. It does what it does. But I've had a personal blog sitting there since early 2024, posting maybe once every few months, and the whole setup felt heavy for what it was. So I moved the whole thing to Hugo and GitHub Pages. With Clawdia, my AI assistant, it took about 15 minutes of my actual time. This is how it went.
 
 ## Why I moved
 
@@ -14,26 +14,27 @@ Three reasons. None of them are earth-shattering.
 
 **It costs nothing.** GitHub Pages is free. WordPress was charging me for hosting on top of that. For a site that gets double-digit monthly traffic, paying for hosting felt like buying a gym membership I never use.
 
-**I already live in markdown and git.** I now write everything in markdown primarily because of my OpenClaw assistant that I've been building. My notes, my docs, my presentations. Having a blog that wants me to log into a web admin panel and use a block editor is friction I don't need.
+**I already live in markdown and git.** I now write everything in markdown, primarily because of the AI assistant I've been building with OpenClaw. My notes, my docs, my presentations. Having a blog that wants me to log into a web admin panel and use a block editor is friction I don't need.
 
-**I wanted my AI assistant to be able to publish for me.** This is the real one. I've been running an AI agent that handles a bunch of my daily workflow — email, task management, research, document drafting. If my blog is just a git repo with markdown files, I can draft posts in my own words, then get Claude to help refine them a little bit. It's an iterative process, and she can commit them, push, and it's done. the agent can draft posts, commit them, and push. No WordPress API, no authentication tokens, no plugins. Just git push.
+**I wanted my AI assistant to be able to publish for me.** This is the real one. I've been running an AI agent that handles a bunch of my daily workflow — email, task management, research, document drafting. If my blog is just a git repo with markdown files, I can draft posts in my own words, get Clawdia to refine them, and she commits and pushes. No WordPress API, no authentication tokens, no plugins. Just git push.
 
 ## How I did it
 
 I'm not going to write a step-by-step tutorial — there are plenty of those. But here's roughly what happened:
 
-**Hugo setup:** this was Claudia's suggestion. I had no idea what Hugo is, but we installed Hugo, created a new site, picked the PaperMod theme because it's clean and fast and I didn't want to spend three hours comparing themes. Configured `hugo.toml` with my details. Took maybe 10 minutes.
+**Hugo setup:** This was Clawdia's suggestion. I had no idea what Hugo was, but she installed it, created a new site, and picked the PaperMod theme because it's clean and fast. Configured `hugo.toml` with my details. Maybe 10 minutes.
 
-**Post migration:** I had 10 posts on WordPress. I got Claude to fetch each one converted to markdown with proper frontmatter (title, date, tags), downloaded the images, and dropped them into Hugo's content folder. Each post lives in its own directory with its images alongside it — Hugo calls these "page bundles" and it keeps things tidy.
+**Post migration:** I had 10 posts on WordPress. Clawdia fetched each one, converted them to markdown with proper frontmatter (title, date, tags), downloaded the images, and dropped them into Hugo's content folder. Each post lives in its own directory with its images alongside it — Hugo calls these "page bundles" and it keeps things tidy.
 
-**GitHub repo:** clawdia created a repo, added a GitHub Actions workflow that builds the Hugo site and deploys to GitHub Pages on every push to main. The workflow file is about 40 lines of YAML that I'll never touch again.
+**GitHub repo:** She created a repo, added a GitHub Actions workflow that builds the Hugo site and deploys to GitHub Pages on every push to main. The workflow file is about 40 lines of YAML that I'll never touch again.
 
 **DNS:** Pointed my domain's A records to GitHub's IPs, added a CNAME for www, typed the domain into GitHub Pages settings, and waited 20 minutes for the TLS certificate to provision. That was the only part that required any patience.
 
-The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour in between doing my day job. And honestly, most of that was wranging the github and word press interfaces.
+The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour in between doing my day job. Most of that was wrangling the GitHub and WordPress interfaces.
+
 ## What I actually did vs. what I just described
 
-I should be honest here. When I said "I did this," what I mean is I told my AI assistant to do it and then approved the output. Clawdia set up Hugo, migrated the posts, created the GitHub repo, configured the deployment pipeline, and pushed. I pointed DNS and clicked a few buttons in GitHub settings.
+I should be honest here. When I said "I did this," what I really mean is I told Clawdia to do it and approved the output. She set up Hugo, migrated the posts, created the GitHub repo, configured the deployment pipeline, and pushed. I pointed DNS and clicked a few buttons in GitHub settings.
 
 That's kind of the point. If your blog infrastructure is simple enough that an AI agent can set it up, migrate your content, and publish posts — it's probably the right level of complexity for a personal blog. WordPress was overkill. A static site generator with git-based deployment is about right.
 
@@ -41,7 +42,7 @@ That's kind of the point. If your blog infrastructure is simple enough that an A
 
 The site loads faster. There's no database. There's no admin panel to secure. There's no plugin update notifications. There's no PHP.
 
-When I want to write a post, I write markdown. When I want to publish, I push to git. When I want my AI assistant to draft something, it writes a markdown file and pushes. The whole thing is transparent — you can literally see the source code for this site.
+When I want to write a post, I write markdown. When I want to publish, I push to git. When I want Clawdia to draft something, she writes a markdown file and pushes. The whole thing is transparent — you can literally see the source code for this site.
 
 ## What's next
 
