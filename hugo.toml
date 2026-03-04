@@ -16,7 +16,7 @@ enableEmoji = true
 [params]
   env = "production"
   title = "Ben Karciauskas"
-  description = "I love exploring what's next in AI and technology, whether that means tinkering with databases, building fun demos, or just figuring out clever solutions to tricky problems. Outside work you'll usually find me mountain biking, gaming (Minecraft is a favorite), or hanging out with my kids."
+  description = "Solutions Architect by day, AI tinkerer by night. Helping enterprises figure out what to do with their data, and building AI agents that actually work."
   author = "Ben Karciauskas"
   defaultTheme = "auto"
   disableThemeToggle = false
@@ -38,7 +38,7 @@ enableEmoji = true
 
   [params.homeInfoParams]
     Title = "G'day, I'm Ben"
-    Content = "I love exploring what's next in AI and technology, whether that means tinkering with databases, building fun demos, or just figuring out clever solutions to tricky problems. Outside work you'll usually find me mountain biking, gaming (Minecraft is a favourite), or hanging out with my kids."
+    Content = "Solutions Architect by day, AI tinkerer by night. I spend most of my time helping enterprises figure out what to actually do with their data — and lately, building AI agents that do useful things instead of just demo well. When I'm not deep in architecture diagrams, I'm mountain biking, wrangling two kids under 7, or arguing with my AI assistant about whether it's actually 3am."
 
   [[params.socialIcons]]
     name = "github"
