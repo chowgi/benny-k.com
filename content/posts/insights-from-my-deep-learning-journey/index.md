@@ -4,6 +4,10 @@ date: 2024-03-11
 tags: [ai, machine-learning, deep-learning, fastai]
 draft: false
 slug: "insights-from-my-deep-learning-journey"
+cover:
+  image: "image-1.png"
+  relative: true
+  alt: "Owl classification model"
 ---
 
 ![Owl classification model training results](image-1.png)
