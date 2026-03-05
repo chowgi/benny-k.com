@@ -3,6 +3,10 @@ title: "From Tedious Chore to Instant Win: Rethinking Automation for Everyday Ta
 date: 2025-11-11
 draft: false
 tags: ["automation", "productivity", "AI", "workflow"]
+cover:
+  image: "cover.png"
+  relative: true
+  alt: "Rethinking Automation for Everyday Tasks"
 ---
 
 That mind-numbing form I faced today turned into an unexpected experiment in stress-free automation. What should have been another "just punch it out" chore revealed how accessible, fast, and surprisingly satisfying automating everyday tasks can be.
