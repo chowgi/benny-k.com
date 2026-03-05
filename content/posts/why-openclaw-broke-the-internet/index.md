@@ -10,7 +10,7 @@ cover:
   alt: "Why OpenClaw Broke the Internet"
 ---
 
-I gave a Lunch & Learn at MongoDB last week. The topic was on OpenClaw. It was well attended and but what was great was people coming to terms with the absurd detail that the slide deck I was presenting was one shotted from a prompt. I sent a single Telegram message to Clawdia (my OpenClaw assistant), went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened.
+I gave a Lunch & Learn at MongoDB last week on OpenClaw. It was well attended, but what was great was people coming to terms with the absurd detail that the slide deck I was presenting was one-shotted from a prompt. I sent a single Telegram message to Clawdia (my OpenClaw assistant), went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened.
 
 You can [view the actual slide deck here](/presentations/openclaw-lunch-and-learn.html).
 
@@ -20,7 +20,7 @@ You can [view the actual slide deck here](/presentations/openclaw-lunch-and-lear
 
 It's an open-source framework that lets you run an AI agent on your own computer. The agent connects to chat apps you already use — WhatsApp, Telegram, Slack — so you interact with it the same way you'd message anyone. No new app, no dashboard to check.
 
-The project was built by one person (Peter Steinberger, the iOS developer behind Swipe keyboard). It's now cleared 235,000 GitHub stars. It hit 100,000 stars in under 30 days, which makes it the fastest-growing repository in GitHub history. At some point during that run, Apple Mac Minis — the preferred hardware to host it on — sold out for six weeks. People are genuinely losing their minds.
+The project was built by one person — Peter Steinberger, the iOS developer behind Swipe keyboard. It's cleared 235,000 GitHub stars. Hit 100,000 in under 30 days, which makes it the fastest-growing repository in GitHub history. At some point during that run, Apple Mac Minis — the preferred hardware to host it on — sold out globally for six weeks. People are genuinely losing their minds.
 
 ---
 
@@ -72,7 +72,7 @@ This is the part I spent the most time on in the talk, because the lessons from 
 
 ## The reality check
 
-This costs real money. You need Claude Max subscription (about $170 aussie). Pro subscription won't cut it. You will burn through your 5 hour rate limit in 5 minutes.
+This costs real money. You need a Claude Max subscription (about $170 aussie). Pro won't cut it. You'll burn through the 5-hour rate limit in about 5 minutes.
 
 You need to be comfortable with a terminal and Docker. It's not hard, but it's not nothing. If you've never run a container before, budget some time.
 
