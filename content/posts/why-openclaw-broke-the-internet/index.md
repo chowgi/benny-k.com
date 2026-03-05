@@ -1,7 +1,7 @@
 ---
 title: "Why OpenClaw Broke the Internet"
 date: 2026-03-05
-draft: true
+draft: false
 tags: ["openclaw", "ai", "agents", "presentation"]
 description: "I gave a talk at MongoDB about OpenClaw and the AI agent I've been running for months. Here's what I covered — and what I actually learned."
 cover:
