@@ -1,82 +1,62 @@
 ---
-title: "Why OpenClaw Broke the Internet"
+title: "I Gave an AI Agent Access to My Email, Calendar, and Tasks. It Went Better Than Expected."
 date: 2026-03-05T16:00:00+11:00
-draft: false
+draft: true
 tags: ["openclaw", "ai", "agents", "presentation"]
-description: "I gave a talk at MongoDB about OpenClaw and the AI agent I've been running for months. Here's what I covered — and what I actually learned."
+description: "Nine months ago I set up a personal AI agent to handle my email, calendar, and life admin. Here's what actually happened."
 cover:
   image: "cover.png"
   relative: true
-  alt: "Why OpenClaw Broke the Internet"
+  alt: "I gave an AI agent access to my email, calendar, and tasks"
 ---
 
-I gave a Lunch & Learn at MongoDB last week on OpenClaw. It was well attended, but what was great was people coming to terms with the absurd detail that the slide deck I was presenting was one-shotted from a prompt. I sent a single Telegram message to Clawdia (my OpenClaw assistant), went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened.
+About nine months ago I set up an AI agent to handle my email, calendar, and tasks. I expected it to be a novelty I'd play with for a week and then abandon.
 
-You can [view the actual slide deck here](/presentations/openclaw-lunch-and-learn.html).
+She's still running.
 
----
+The problem I was trying to solve was embarrassingly mundane. Small stuff kept slipping — emails I meant to follow up on, tasks I'd think of in the shower and forget by lunchtime, meeting prep I kept putting off. Not a crisis. Just that layer of admin that never stops accumulating and never feels like anyone's main job. I was tired of carrying it all in my head.
 
-## So what is OpenClaw?
+I'd been watching [OpenClaw](https://github.com/openclaw/openclaw) on GitHub for a while. Open-source, self-hosted AI agent. You run it on your own machine, connect it to chat apps you already use — Telegram, WhatsApp — and talk to it the way you'd message anyone. No dashboard, no new app. It crossed 235,000 GitHub stars faster than anything in GitHub's history, and at some point Mac Minis — the preferred hardware to host it on — sold out globally for about six weeks. People are genuinely losing their minds over this thing.
 
-It's an open-source framework that lets you run an AI agent on your own computer. The agent connects to chat apps you already use — WhatsApp, Telegram, Slack — so you interact with it the same way you'd message anyone. No new app, no dashboard to check.
-
-The project was built by one person — Peter Steinberger, the iOS developer behind Swipe keyboard. It's cleared 235,000 GitHub stars. Hit 100,000 in under 30 days, which makes it the fastest-growing repository in GitHub history. At some point during that run, Apple Mac Minis — the preferred hardware to host it on — sold out globally for six weeks. People are genuinely losing their minds.
-
----
-
-## Why did it go viral?
-
-I spent some time on this in the talk because I think the obvious answer ("AI is hot right now") misses what actually happened.
-
-A few things came together at once.
-
-The models finally crossed a threshold where they're good enough to run autonomously without constant babysitting. Opus 4.6, Codex 5.3 — these aren't "impressive demo" models anymore. They're "actually does useful work" models.
-
-The interface decision was smart. Talking to your agent via WhatsApp or Telegram sounds trivial, but it matters enormously. Most AI tools fail because you have to go somewhere special to use them. OpenClaw goes where you already are.
-
-Then there's the self-modifying software angle. An AI agent that can edit its own source code, write its own tools, and extend its own capabilities. That breaks something in your brain a bit, honestly.
-
-And finally — the `SOUL.md` file. You give the agent a name, a personality, a set of values. It sounds gimmicky until you realise that naming the thing makes you take it seriously. You write better guardrails. You invest in making it good at its job.
+I decided to actually set it up rather than just starring the repo.
 
 ---
 
-## What does Clawdia actually do for me?
+## What I built
 
-The honest answer is: more than I expected, and in ways I didn't anticipate.
+You give the agent a name and a personality. This sounds gimmicky. It isn't. I named mine Clawdia, wrote a `SOUL.md` file with her personality and values, and immediately started investing in the setup differently. Better guardrails. More thought about what I actually wanted her to do. I don't fully understand why naming something makes you take it more seriously, but it does.
 
-Life admin that would otherwise rot in my brain: Todoist tasks, warranty claims, email drafts. I describe something in a message, it creates a draft or a task or a reminder. I've found myself just talking at it the way you'd vent to a colleague, and it handles things.
+She connects to my Todoist, my Gmail, my Google Calendar, and a MongoDB Atlas knowledge base I built for her. When I send a message — badly phrased, half-formed, voice-to-text garbled — she figures out what I meant and either creates a task, drafts an email, or files something away somewhere I'll actually find it.
 
-It built this presentation. It writes Google Docs. It maintains a vector search knowledge base (MongoDB Atlas, obviously) where I can throw articles, notes, and transcripts and search them later. I now have a second brain that I can actually find things in.
+I gave a talk about all this at work recently — a Lunch & Learn at MongoDB. The slide deck was built by Clawdia. I sent one Telegram message describing what I wanted, went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened. You can [look at the deck here](/presentations/openclaw-lunch-and-learn.html) if you're curious.
 
-It runs on a schedule too. Morning briefing, meal suggestions for the kids, bin day reminder, weekly research summaries. None of that needed a single line of code from me. I just described what I wanted.
+She also runs on a schedule. Morning briefing, bin day reminders, meal suggestions for the kids on weekday evenings. None of that required code from me. I described what I wanted and she built the tools to do it.
 
-The compounding effect surprised me. By week four, it was catching things before I'd thought about them.
+By week four, she was catching things before I'd thought about them.
 
 ---
 
-## What I've actually learned
+## What I actually learned
 
-This is the part I spent the most time on in the talk, because the lessons from actually running this for months are different from what you'd expect.
+Running this for months is different from setting it up for a weekend.
 
-**Do the research first.** My agent has a MongoDB second brain that I throw everything into before building something. The quality of what comes out correlates almost exactly with the quality of what went in. Garbage in, garbage out — still true, still underappreciated.
+The research matters more than the build. My agent has a MongoDB second brain and I throw everything into it before asking her to do anything complex. What comes out correlates almost exactly with what went in. Garbage in, garbage out — still true, still underappreciated.
 
-**It will break things.** Clawdia has hallucinated tasks that didn't exist, spammed my phone at 3am, and nearly deleted its own memory file. Each failure became a rule in `AGENTS.md`. I think of it as scar tissue. The document now has guardrails that came from real mistakes, and the agent is meaningfully better for it.
+She will break things. Clawdia has hallucinated tasks that didn't exist, spammed my phone at 3am, and nearly deleted her own memory file. Every failure became a rule in `AGENTS.md`. I think of it as scar tissue. That document now has guardrails from real mistakes, and she's genuinely better for each one.
 
-**Trust is a cycle, not a switch.** I'd delegate something, it'd go wrong, I'd pull back and add constraints, then delegate again further. I'm further along that cycle now than I was in week one, but I'm not at "run everything autonomously while I sleep." Not quite.
+Trust is a cycle, not a switch. I'd delegate something, it'd go wrong, I'd pull back and add constraints, then try again a bit further out. I'm further along that cycle than I was in week one, but I'm not at "runs everything while I sleep." Not quite.
 
-**Memory is everything.** The agent wakes up fresh every session. It has no continuity except what's in the files. I've spent real time on those files. `SOUL.md` is personality. `AGENTS.md` is how it operates. `USER.md` is context about me. `MEMORY.md` is accumulated knowledge. The quality of those files is the quality of the agent. It took me a while to take that seriously.
-
-**Naming it mattered.** I don't fully understand why, but having a named agent with a personality made me invest differently in the setup. I wrote better constraints. I thought harder about what I actually wanted it to do. Maybe it just forces you to be specific.
+Memory is everything. She wakes up fresh every session — no continuity except what's in the files. `SOUL.md` is personality. `AGENTS.md` is how she operates. `USER.md` is context about me. `MEMORY.md` is accumulated knowledge. The quality of those files is the quality of the agent. It took me a while to take that seriously.
 
 ---
 
 ## The reality check
 
-This costs real money. You need a Claude Max subscription (about $170 aussie). Pro won't cut it. You'll burn through the 5-hour rate limit in about 5 minutes.
+This costs real money. You need a Claude Max subscription — about $170 aussie a month. The Pro tier won't cut it. You'll burn through the rate limit in about five minutes.
 
 You need to be comfortable with a terminal and Docker. It's not hard, but it's not nothing. If you've never run a container before, budget some time.
 
-And the security question is genuine. The agent runs shell commands. It reads files. It has API keys. That's a real attack surface. The guardrails in `AGENTS.md` aren't just for functionality — they're actual security rules. You have to think about this.
+The security question is genuine. She runs shell commands. She reads files. She has API keys. That's a real attack surface. The guardrails in `AGENTS.md` aren't just for functionality — they're actual security rules. You have to think about this.
 
 I'm not saying any of that to put people off. I'm saying it because if you go in expecting magic with no tradeoffs, you'll set it up wrong and it'll disappoint you.
 
@@ -84,11 +64,11 @@ I'm not saying any of that to put people off. I'm saying it because if you go in
 
 ## If you're thinking about trying it
 
-Start with the `SOUL.md` and `AGENTS.md` files. That's where the agent actually lives. Most people install the software and then write three lines in those files and wonder why the agent feels generic. It's generic because you gave it nothing to work with.
+Start with the `SOUL.md` and `AGENTS.md` files. That's where the agent actually lives. Most people install the software, write three lines in those files, and wonder why the agent feels generic. It's generic because you gave it nothing to work with.
 
-Pick one job for it to own completely before adding more. Mine started with Todoist and email drafts. Once that was solid, I added the calendar, then the second brain, then the proactive stuff.
+Pick one job for it to own completely before adding more. Mine started with Todoist and email drafts. Once that was solid, I added the calendar, then the knowledge base, then the proactive stuff.
 
-And write down every mistake it makes. That document becomes your operating manual, and it's worth more than any tutorial.
+Write down every mistake it makes. That document becomes your operating manual, and it's worth more than any tutorial.
 
 ---
 
