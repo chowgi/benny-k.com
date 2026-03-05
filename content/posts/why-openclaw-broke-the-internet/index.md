@@ -10,9 +10,7 @@ cover:
   alt: "Why OpenClaw Broke the Internet"
 ---
 
-I gave a Lunch & Learn at MongoDB last week. The topic was OpenClaw — the open-source framework I've been running for the past few months to manage my personal AI agent.
-
-There's a mildly absurd detail worth mentioning upfront: the slide deck was built by the agent. I sent a single Telegram message to Clawdia (my OpenClaw assistant), went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened.
+I gave a Lunch & Learn at MongoDB last week. The topic was on OpenClaw. It was well attended and but what was great was people coming to terms with the absurd detail that the slide deck I was presenting was one shotted from a prompt. I sent a single Telegram message to Clawdia (my OpenClaw assistant), went and made a coffee, and came back to a complete Reveal.js presentation sitting in my Google Drive. That's not a demo I staged for the talk. That's just what happened.
 
 You can [view the actual slide deck here](/presentations/openclaw-lunch-and-learn.html).
 
@@ -22,9 +20,7 @@ You can [view the actual slide deck here](/presentations/openclaw-lunch-and-lear
 
 It's an open-source framework that lets you run an AI agent on your own computer. The agent connects to chat apps you already use — WhatsApp, Telegram, Slack — so you interact with it the same way you'd message anyone. No new app, no dashboard to check.
 
-The project was built by one person (Peter Steinberger, the iOS developer behind Swipe keyboard) in roughly an hour. It's now cleared 235,000 GitHub stars. It hit 100,000 stars in under 30 days, which makes it the fastest-growing repository in GitHub history. At some point during that run, Apple Mac Minis — the preferred hardware to host it on — sold out for six weeks.
-
-That's not a marketing story. That's people genuinely losing their minds over something.
+The project was built by one person (Peter Steinberger, the iOS developer behind Swipe keyboard). It's now cleared 235,000 GitHub stars. It hit 100,000 stars in under 30 days, which makes it the fastest-growing repository in GitHub history. At some point during that run, Apple Mac Minis — the preferred hardware to host it on — sold out for six weeks. People are genuinely losing their minds.
 
 ---
 
@@ -58,16 +54,6 @@ The compounding effect surprised me. By week four, it was catching things before
 
 ---
 
-## What other people are building
-
-I put a slide together on community projects because the variety is genuinely interesting.
-
-Someone processed 4,000 emails to zero inbox in two days. Someone built an automated crypto trading setup. A colleague who co-presented with me built a shopping assistant. There are agents that book restaurants by phone call, integrate with Whoop for health data, and extend their own Spotify playlists.
-
-The Spotify one is the one that messes with me. An agent that writes code to extend its own music capabilities. Fine. Sure. That's fine.
-
----
-
 ## What I've actually learned
 
 This is the part I spent the most time on in the talk, because the lessons from actually running this for months are different from what you'd expect.
@@ -86,7 +72,7 @@ This is the part I spent the most time on in the talk, because the lessons from 
 
 ## The reality check
 
-This costs real money. You need Claude Max or Claude Pro to run this sensibly, which is $20-100/month depending on usage. If you're used to free tiers, the token anxiety is real. I have a meme in the slide deck (Tyrone Biggums, for those keeping score) that captures how I feel watching token counts climb.
+This costs real money. You need Claude Max subscription (about $170 aussie). Pro subscription won't cut it. You will burn through your 5 hour rate limit in 5 minutes.
 
 You need to be comfortable with a terminal and Docker. It's not hard, but it's not nothing. If you've never run a container before, budget some time.
 
