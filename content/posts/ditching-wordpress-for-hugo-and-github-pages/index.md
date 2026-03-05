@@ -2,7 +2,7 @@
 title: "I Ditched WordPress for Hugo and GitHub Pages. Here's How."
 date: 2026-03-05
 tags: ["hugo", "github", "wordpress", "blogging"]
-draft: true
+draft: false
 cover:
   image: "cover.png"
   relative: true
