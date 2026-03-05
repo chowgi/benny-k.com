@@ -3,6 +3,9 @@ title: "I Ditched WordPress for Hugo and GitHub Pages. Here's How."
 date: 2026-03-05
 tags: ["hugo", "github", "wordpress", "blogging"]
 draft: true
+cover:
+  image: "cover.png"
+  alt: "Ditching WordPress for Hugo"
 summary: "My blog was costing me money to serve 17 visitors a month. That felt stupid. So I moved to Hugo and GitHub Pages in about an hour."
 ---
 
