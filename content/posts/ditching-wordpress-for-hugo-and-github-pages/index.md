@@ -32,12 +32,6 @@ I'm not going to write a step-by-step tutorial — there are plenty of those. Bu
 
 The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour in between doing my day job. Most of that was wrangling the GitHub and WordPress interfaces.
 
-## What I actually did vs. what I just described
-
-I should be honest here. When I said "I did this," what I really mean is I told Clawdia to do it and approved the output. She set up Hugo, migrated the posts, created the GitHub repo, configured the deployment pipeline, and pushed. I pointed DNS and clicked a few buttons in GitHub settings.
-
-That's kind of the point. If your blog infrastructure is simple enough that an AI agent can set it up, migrate your content, and publish posts — it's probably the right level of complexity for a personal blog. WordPress was overkill. A static site generator with git-based deployment is about right.
-
 ## What's different now
 
 The site loads faster. There's no database. There's no admin panel to secure. There's no plugin update notifications. There's no PHP.
