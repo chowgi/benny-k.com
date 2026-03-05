@@ -28,7 +28,7 @@ I'm not going to write a step-by-step tutorial — there are plenty of those. Bu
 
 **GitHub repo:** She created a repo, added a GitHub Actions workflow that builds the Hugo site and deploys to GitHub Pages on every push to main. The workflow file is about 40 lines of YAML that I'll never touch again.
 
-**DNS:** Pointed my domain's A records to GitHub's IPs, added a CNAME for www, typed the domain into GitHub Pages settings, and waited 20 minutes for the TLS certificate to provision. That was the only part that required any patience.
+**DNS:** Pointed my domain's A records to GitHub's IPs, added a CNAME for www, typed the domain into GitHub Pages settings, and waited 20 minutes for the TLS certificate to provision.
 
 The whole thing — from "I should probably move off WordPress" to "the site is live on the new stack" — was about an hour in between doing my day job. Most of that was wrangling the GitHub and WordPress interfaces.
 
