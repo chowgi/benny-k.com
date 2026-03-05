@@ -5,6 +5,7 @@ draft: false
 tags: ["Databricks", "LLM", "RAG", "vector-search", "AWS", "chatbot", "AI"]
 cover:
   image: "image-1.png"
+  relative: true
 ---
 
 ## Introduction

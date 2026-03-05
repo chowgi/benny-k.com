@@ -5,6 +5,7 @@ draft: false
 tags: ["Cursor", "Jupyter", "Python", "developer-tools", "AI", "productivity"]
 cover:
   image: "screenshot-2025-10-30-at-11.56.59-am.png"
+  relative: true
 ---
 
 #### Discover seamless code exploration—and what to expect—when using Jupyter workflows inside Cursor

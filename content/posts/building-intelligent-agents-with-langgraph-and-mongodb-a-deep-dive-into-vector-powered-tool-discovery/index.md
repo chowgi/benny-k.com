@@ -5,6 +5,7 @@ draft: false
 tags: ["AI", "LangGraph", "MongoDB", "vector-search", "agents", "RAG", "VoyageAI", "Python"]
 cover:
   image: "tool-discovery-2.png"
+  relative: true
 ---
 
 When building AI agents, one of the biggest challenges is tool selection—especially as the number of available tools increases. Evidence from OpenAI's developer community and technical documentation highlights that agents' tool selection accuracy tends to drop noticeably with larger toolsets, sometimes causing irrelevant or random tools to be invoked even with carefully designed prompts. OpenAI's internal discussions note a clear decline in single-tool call accuracy and an uptick in failure modes as the system prompt and available tool list grows, with developer complaints of incorrect or unexpected tool choices despite best practices.

@@ -5,6 +5,7 @@ draft: false
 tags: ["AI", "machine-learning", "LLM", "research", "inference", "Samsung", "determinism"]
 cover:
   image: "screenshot-2025-10-13-at-1.29.17-pm.png"
+  relative: true
 ---
 
 You know those weeks when you glance at the AI headlines and think, "Okay, that's neat, but it'll be years before we feel it on the ground?" Then something drops that makes you double-take. That's exactly how the Samsung Tiny Recursive Model (TRM) news hit me. And just as I was digesting that, the Thinking Machines Lab's work on deterministic LLM inference showed up. Both are challenging what we thought AI needed to get better and more reliable.
