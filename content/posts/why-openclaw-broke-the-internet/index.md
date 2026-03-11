@@ -10,33 +10,31 @@ cover:
   alt: "I gave an AI agent access to my whole life"
 ---
 
-Last week I stood in front of 50 developers at a bank and asked who'd heard of vector embeddings. I got blank stares. A few polite nods from people who were clearly bluffing.
+I spend too much time on X. In my feed, everyone's building autonomous agents, shipping production AI systems, running ralph loops to refine and increase performance on models that where beleieved to be near 100% optimised by people who had been doing exactly this type of things for 20+ years and debating whether software engineers are already obsolete. I genuinely felt like I was falling behind. 
 
-I spend too much time on X. In my feed, everyone's building autonomous agents, shipping production AI systems, and debating whether software engineers are already obsolete. I genuinely felt like I was falling behind. Then I looked at that room and realised I'd lapped most of them without noticing.
+That was before I stood in front of 50 developers at a customer yesturday to talk about techniques to help scale AI applications on MongoDB. Since it was the end of a long day of sessionsand everyone was getting tired and I had way too much content to get through, so I asked the audience to hold questions they might have or preferably come talk to me about OpenClaw which has become my new obsession. Judging by the blank stares in the audience and the failure of a single dev even mentioning it to me (although I do get questions about my presentation, which I'll take), I realize that I'm actually on the bleeding edge comparatively.
 
 Five weeks ago I set up an AI agent called Clawdia using OpenClaw. I expected to play with it for a weekend and move on. She's still running. She's become the most useful tool I've ever used, and I don't think I could go back.
 
 ## What OpenClaw actually is
 
-OpenClaw is an open-source, self-hosted AI agent. You run it on your own machine, connect it to Telegram or WhatsApp, and talk to it like you'd message anyone. No dashboard. No app. Just a chat window.
+the TLDR is, OpenClaw is an open-source, self-hosted AI agent. You run it on your own machine, connect it to Telegram or WhatsApp, and talk to it like you'd message anyone. No dashboard. No app. Just a chat window.
 
-It crossed 250,000 GitHub stars in about four months. Mac Minis sold out globally because people were buying them specifically to run this thing. That should tell you something about the demand.
+It crossed 250,000 GitHub stars in about 3 months. Mac Minis sold out globally because people were buying them specifically to run this thing (which is actually make no sense but I'll leave that for another post). That should tell you something about the demand.
 
 You give the agent a name, a personality file, and a set of rules. This sounds like a gimmick. It isn't. I named mine Clawdia, wrote a personality file called `SOUL.md`, and immediately started caring about the setup more than I would have for some anonymous bot. I still don't fully understand why naming something changes how you treat it, but it does.
 
-## What she actually does
+## What she actually does (mostly, I cant share all my secrets.)
 
-Every morning at 8am I get a Telegram message. Calendar for the day. Melbourne weather. My tasks sorted by priority. A high-protein breakfast suggestion, because I asked her to track that. A Stoic quote, because apparently that's who I am now.
+Every morning at 8am I get a Telegram message. Calendar for the day. Melbourne weather. My tasks sorted by priority. A high-protein breakfast suggestion, because I asked her to track that. A Stoic quote, because apparently that's who I am now. I also have Clawdia in a group chat with my wife because she has access to both my work (only free/busy) and my personal calendar. My wife just asks, "Hey, when has Ben got some availability to take Max for a haircut?" or "When can I book Ben his dentist appointment?" 
 
-None of that is groundbreaking. It's a calendar check, a weather API, and a query to my task manager. But I actually read it every morning. I never checked my calendar consistently before. The friction of opening four apps was apparently enough to stop me.
-
-That pattern keeps repeating. Small friction removed, behaviour changed.
-
-When someone sends me a customer email, Clawdia reads it, extracts the contacts, logs the interaction to a CRM she built in MongoDB, and archives the email. I BCC her on client emails and it just happens. No data entry. No forgetting.
+Clawdia will then give Cathy some free times. Cathy will say, "Yep, please book it in there," and Clawdia just does it.
 
 I sent her a link to a YouTube video about kitchen lighting for our renovation. She watched it, extracted every tip, saved it to a file, and created a formatted Google Doc in my "Renovation 2026" Drive folder. Took about 90 seconds.
 
 Last week I was building a presentation for a developer day at a bank. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard" — yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used most of her notes.
+
+None of that is groundbreaking. It's a calendar check, a smmerisation, a web search, and a query to my task manager. But because of the memory of all out interactions it has a compaounding effect of becomeing more and more useful. 
 
 ## She built a side project with me
 
@@ -54,11 +52,13 @@ She told me to drink a glass of water "before bed" at 1pm on a Monday. More than
 
 She hallucinated Todoist tasks that didn't exist. I asked for my task list and she gave me one from memory instead of actually querying Todoist. The tasks sounded plausible. They were completely made up. That's the dangerous kind of hallucination — not obviously wrong, just subtly wrong enough that you might act on it.
 
-She spammed my phone at 3am. She nearly deleted her own memory file. She told another user's group chat something she shouldn't have had access to.
+She spammed my phone at 3am. She nearly deleted her own memory file.
 
 Every one of those failures became a rule in her operating manual. I think of it as scar tissue. That document now has guardrails from real mistakes, and she's genuinely better for each one.
 
 ## What I actually learned
+
+**It's super addictive.** What I didn't expect was how addictive and fun it is to work with a personal agent. There is something about the process of brainstorming and building something—seeing it work, seeing it break, making it better that provides a constant dopamine hit. It is better than any of those other dopamine-inducing bad habits we have.
 
 **Memory is everything.** Clawdia wakes up fresh every session. No continuity except what's in the files. `SOUL.md` is personality. `AGENTS.md` is how she operates. `USER.md` is context about me. `MEMORY.md` is accumulated knowledge. The quality of those files is the quality of the agent. It took me a couple of weeks to take that seriously.
 
