@@ -1,7 +1,7 @@
 ---
 title: "I Gave an AI Agent Access to My Whole Life. Here's What Five Weeks Looks Like."
 date: 2026-03-11T16:00:00+11:00
-draft: true
+draft: false
 tags: ["openclaw", "ai", "agents"]
 description: "Five weeks ago I set up a personal AI agent. It now runs my email, calendar, tasks, CRM, health tracking, and helped me build a side project. This is what actually happened."
 cover:
