@@ -76,15 +76,11 @@ The security question is genuine. She runs shell commands. She reads files. She 
 
 I'm not saying any of that to put people off. I'm saying it because if you go in expecting magic with no tradeoffs, you'll set it up badly and blame the tool.
 
-## The gap is bigger than you think
+## Five weeks in
 
-The gap between people who are actually using AI tools and people who are reading about them isn't 10%. It's closer to 10x. And it's not a generational thing. I'm 45. The dividing line is whether you're the kind of person who tries things or the kind who waits for permission.
+Five weeks in, I'm not the same person who set this up. Not in some profound way. I just don't carry stuff in my head anymore. Tasks, follow-ups, meeting prep, the renovation, the side project — it's all somewhere that isn't my brain. That's it. That's the whole thing.
 
-If you're reading this and thinking about setting it up: start with the `SOUL.md` and `AGENTS.md` files. That's where the agent actually lives. Most people install the software, write three lines in those files, and wonder why the agent feels generic. It's generic because you gave it nothing to work with.
-
-Pick one job for it to own completely before adding more. Mine started with Todoist and email drafts. Once that was solid, I added the calendar, then the knowledge base, then the proactive stuff.
-
-Write down every mistake it makes. That document becomes your operating manual, and it's worth more than any tutorial.
+I thought AI agents were for engineers building startups. Turns out they're for anyone who's tired of keeping 50 tabs open in their head.
 
 ---
 
