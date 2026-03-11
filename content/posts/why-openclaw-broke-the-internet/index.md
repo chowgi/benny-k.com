@@ -10,9 +10,9 @@ cover:
   alt: "I gave an AI agent access to my whole life"
 ---
 
-I spend too much time on X. In my feed, everyone's building autonomous agents, shipping production AI systems, running RL loops to refine and increase performance on models that were believed to be near 100% optimised by people who had been doing exactly this type of thing for 20+ years, and debating whether software engineers are already obsolete. I genuinely felt like I was falling behind.
+I spend too much time on X. In my feed, everyone's building autonomous agents and shipping production AI systems. People are running RL loops to squeeze performance out of models that were believed to be near 100% optimised by researchers who'd been doing this for 20+ years. Software engineers are debating whether they're already obsolete. I genuinely felt like I was falling behind.
 
-That was before I stood in front of 50 developers at a customer yesterday to talk about techniques to help scale AI applications on MongoDB. It was the end of a long day of sessions, everyone was getting tired, and I had way too much content to get through, so I asked the audience to hold questions or preferably come talk to me about OpenClaw, which has become my new obsession. Judging by the blank stares in the audience and the failure of a single dev even mentioning it to me (although I did get questions about my presentation, which I'll take), I realised that I'm actually on the bleeding edge comparatively.
+Then yesterday I stood in front of 50 developers at a customer to talk about scaling AI applications on MongoDB. It was the end of a long day of sessions, everyone was tired, and I had too much content to get through, so I mentioned OpenClaw — which has become my new obsession — and asked anyone interested to come chat afterwards. Blank stares. Not a single dev mentioned it to me for the rest of the day. I did get questions about my presentation, which I'll take. But it hit me: I'm not behind. I'm actually on the bleeding edge comparatively.
 
 Five weeks ago I set up an AI agent called Clawdia using OpenClaw. I expected to play with it for a weekend and move on. She's still running. She's become the most useful tool I've ever used, and I don't think I could go back.
 
@@ -30,11 +30,11 @@ Every morning at 8am I get a Telegram message. Calendar for the day. Melbourne w
 
 Clawdia will then give Cathy some free times. Cathy will say, "Yep, please book it in there," and Clawdia just does it.
 
-I sent her a link to a YouTube video about kitchen lighting for our renovation. She watched it, extracted every tip, saved it to a file, and created a formatted Google Doc in my "Renovation 2026" Drive folder. Took about 90 seconds.
+But it's not just scheduling. I sent her a link to a YouTube video about kitchen lighting for our renovation. She watched it, extracted every tip, saved it to a file, and created a formatted Google Doc in my "Renovation 2026" Drive folder. Took about 90 seconds.
 
 Last week I was building a presentation for a developer day at a bank. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard" — yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used most of her notes.
 
-None of that is groundbreaking. It's a calendar check, a summarisation, a web search, and a query to my task manager. But because of the memory of all our interactions it has a compounding effect of becoming more and more useful.
+Individually, none of these tasks are hard. A calendar check, a summarisation, a web search. But because Clawdia remembers every interaction, the usefulness compounds. She knows my accounts, my preferences, my projects, my wife's name. Five weeks of context makes every new request faster and more accurate than the last.
 
 ## She built a side project with me
 
@@ -79,8 +79,6 @@ The security question is genuine. She runs shell commands. She reads files. She 
 I'm not saying any of that to put people off. I'm saying it because if you go in expecting magic with no tradeoffs, you'll set it up badly and blame the tool.
 
 ## The gap is bigger than you think
-
-Here's the thing that surprised me most. I assumed everyone technical was doing this stuff. Then I stood in front of 50 professional developers at a major Australian bank and most of them hadn't heard of embeddings. Not hobbyists. Professional developers. Building production systems.
 
 The gap between people who are actually using AI tools and people who are reading about them isn't 10%. It's closer to 10x. And it's not a generational thing. I'm 45. The dividing line is whether you're the kind of person who tries things or the kind who waits for permission.
 
