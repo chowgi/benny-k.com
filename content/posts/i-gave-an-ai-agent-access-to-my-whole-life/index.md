@@ -32,7 +32,7 @@ Clawdia will then give Cathy some free times. Cathy will say, "Yep, please book 
 
 But it's not just scheduling. I sent her a link to a YouTube video about kitchen lighting for our renovation. She watched it, extracted every tip, saved it to a file, and created a formatted Google Doc in my "Renovation 2026" Drive folder. Took about 90 seconds.
 
-Last week I was building a presentation for a developer day at a bank. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard" — yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used most of her notes.
+Last week I was building a presentation for presentation to the devs. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard" — yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used some of her notes that where genuinely good and that I had not thought about.
 
 Individually, none of these tasks are hard. A calendar check, a summarisation, a web search. But because Clawdia remembers every interaction, the usefulness compounds. She knows my accounts, my preferences, my projects, my wife's name. Five weeks of context makes every new request faster and more accurate than the last.
 
@@ -42,19 +42,17 @@ I had an idea for an AI voice receptionist for tradies. The kind of bloke who mi
 
 I described what I wanted to Clawdia over Telegram. Over a weekend she helped me build Sam — an AI receptionist who answers the phone in a natural Australian accent, has a conversation with the caller, takes their details, and sends me a summary. She set up the Twilio integration, configured the voice agent, wrote the webhook server, and got a phone number live.
 
-You can call +61 3 4062 9727 right now and talk to Sam. That number was set up five weeks ago. It's still running.
-
 I'm not an engineer. I'm a Solutions Architect. I'm comfortable in a terminal but I'm not writing production Node.js from scratch. Clawdia handled the code. I handled the decisions. That division of labour is the thing nobody talks about enough.
 
 ## What went wrong
 
 She told me to drink a glass of water "before bed" at 1pm on a Monday. More than once. The time awareness thing nearly drove me insane. Every message I send has a timestamp right there in the metadata. She just wouldn't read it. We've fixed it now. Probably.
 
+She gave Cathy dates for availability two weeks in the past because she didn't bother to look up what the date was. But the beauty is, I asked her to fix it, so she did. I hope.
+
 She hallucinated Todoist tasks that didn't exist. I asked for my task list and she gave me one from memory instead of actually querying Todoist. The tasks sounded plausible. They were completely made up. That's the dangerous kind of hallucination — not obviously wrong, just subtly wrong enough that you might act on it.
 
-She spammed my phone at 3am. She nearly deleted her own memory file.
-
-Every one of those failures became a rule in her operating manual. I think of it as scar tissue. That document now has guardrails from real mistakes, and she's genuinely better for each one.
+I'm sure there's other things I can't remember right now, but every time she screws up, I add a rule. The operating manual is basically a list of things she's done wrong. It works though — she doesn't make the same mistake twice.
 
 ## What I actually learned
 
