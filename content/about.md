@@ -5,9 +5,9 @@ url: "/about/"
 summary: "about"
 ---
 
-Hey, I'm Ben.
+G’day, I’m Ben
 
-I am currently a Senior Solutions Architect at MongoDB. I help banks and enterprises figure out what to do with their data. Recently got obsessed with AI agents and accidentally built one that runs my life better than I do. Melbourne. Husband, Father of two kids. Too many side projects.
+Solutions Architect by day, AI tinkerer by night. I spend most of my time helping enterprises figure out what to actually do with their data — and lately, building AI agents that do useful things instead of just demo well. When I’m not deep in architecture diagrams, I’m mountain biking, wrangling two kids under 7, or arguing with my AI assistant about whether it’s actually 3am.
 
 **Find me elsewhere:**
 - GitHub: [chowgi](https://github.com/chowgi)
