@@ -1,32 +1,38 @@
 ---
-title: "Why Your AI Coding Experience Sucks (And It's Not the AI's Fault)"
+title: "Why Your AI Coding Experience Sucks (Probably)"
 date: 2026-03-12T09:00:00+11:00
 draft: true
 tags: ["ai", "developer-tools", "claude-code", "productivity"]
 description: "The AI coding divide isn't believers vs sceptics. It's people who get to choose their tools vs people who don't."
 ---
 
-A mate of mine is a good developer. Better than me, honestly. He's been using GitHub Copilot for six months and his verdict is: "Nah, I don't really rate it."
+A mate of mine is a real developer (and a good one). I've always dabbled with code, but I've never done it professionally and wouldn't consider myself a developer in the traditional sense, but I've always wondered what actual developers think about coding agents. I was talking to him about all the incredible things I was doing, and he gave me a wry smile, saying, "Yeah, but that's toy code. You're not working on production code." He went on to explain that he has been using GitHub Copilot, and it's allowed him to do things probably two or three times faster in terms of code refactoring. Based on what I see and read, this seems really low but I didn't push back. But I was thinking about it the whole drive home.
 
-I didn't push back. But I was thinking about it the whole drive home.
-
-Here's what I'm actually doing: building a personal AI agent, a side project, and half my conference presentations with Claude Code on the weekend. Not at work. At home, in the evening, while my kids are asleep. And it's the most productive I've felt in years. We're not having the same experience at all.
-
-Then last week I was at Bendigo Bank talking to Adam. Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants, half the time he ends up fighting the suggestions, and he's started turning it off for anything serious. His conclusion is more or less the same as my mate's: AI coding is a bit oversold.
+Then last week I was working with a customer, lets call him Michael, Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants, half the time he ends up fighting the suggestions he has having to copy in context manually from various sources. His conclusion is more or less the same as my mate's: AI coding is useful yes but a bit oversold.
 
 I've started noticing this pattern everywhere.
 
----
-
-Here's how it usually goes. Some executive reads a Gartner report or sees a competitor announce an AI initiative. The mandate comes down: we're doing AI. Procurement looks at what they already pay for — Microsoft, Google, JetBrains, whoever — and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
-
-IT rolls it out and sets an adoption metric. Because if you can't measure it, you can't report it to the steering committee. The metric is usually something like "% of developers with the plugin installed" or "AI-assisted code acceptance rate."
-
-Developers install it. Some like it. Most find it fine at best. The quality gap between "best AI coding tool available right now" and "the thing we licensed" can be significant, but nobody in the room has used both, so there's no comparison point. The experience is mediocre. People switch it off for hard problems. The adoption KPI is hit. Leadership declares success. Developers quietly conclude that AI coding is a bit overhyped.
-
-Meanwhile, the person in their garage with Claude Code is shipping circles around them.
+Again, I'm not a professional coder, however, I am building a personal AI agent, several side projects, and half my presentations with Claude Code. I'm amazed by how much I can achieve, it's the most productive I've felt in years. We're not having the same experience at all.
 
 ---
+
+After these discussions and reading various things on X, watching YouTube videos, and doing all the stuff that I love doing (that, to be honest, most people would probably find super boring), I think I may have figured out why we are having such vastly different experiences. 😔
+
+It just comes down to the freedom to choose your AI tools. In both examples, they are having their AI tools dictated to them, whereas I can choose the tools that I know produce vastly better outcomes.
+
+So why are companies choosing these subpar tools? 
+
+Here's how it usually goes. Some executive reads a Gartner report or sees a competitor announce an AI initiative. The mandate comes down: we're doing AI. Procurement looks at what they already pay for — Microsoft Colpilot, Google Gemini or whoever — and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
+
+Other times it comes down to "This is what the security team has told us we can use." Which, you know, in enterprise setting like banking etc I totally get.
+
+Developers install it. Some like it. Most find it fine at best. The quality gap between "best AI coding tool available right now" and "the thing we licensed" can be significant.
+
+Meanwhile, some random dude is running fleets of agents with Claude Code and SOTA models and shipping circles around them.
+
+The problem is not AI coding agents. We are there; they work. Anthropic and OpenAI—most of their code is now written by AI.
+
+The issue is the companies (arguably for good reasons) mandating which tools to use, and they're falling behind.
 
 Amazon found this out the hard way.
 
@@ -42,8 +48,4 @@ I'm not objective here. I use Claude with Opus, I run it with full autonomy on m
 
 So I'm probably biased. But I also talk to a lot of developers, and the pattern I keep seeing is real. The people who've had good AI coding experiences almost always chose their own tools. The people who are sceptical almost always had a tool chosen for them.
 
-That's not a coincidence.
-
-If you tried AI coding and walked away unimpressed, ask yourself one thing: did you get to choose the tool, or did someone else?
-
-Because the answer to that probably explains more than anything about the model.
+In my opinion that's not a coincidence.
