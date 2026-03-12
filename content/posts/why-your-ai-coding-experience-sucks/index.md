@@ -14,33 +14,27 @@ A mate of mine is a real developer (and a good one). I've always dabbled with co
 
 Then last week I was working with a customer. Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants. Half the time he ends up fighting the suggestions, having to copy in context manually from various sources. His conclusion is more or less the same as my mate's: AI coding is useful, yes, but a bit oversold.
 
-I've started noticing this pattern more and more.
-
-I'm not a professional coder. But I am building a personal AI agent, several side projects, and half my presentations with Claude Code. I'm amazed by how much I can achieve. It's the most productive I've felt in years. We're not having the same experience at all.
-
-After enough of these conversations, I think I've figured out why.
+I've started noticing this pattern more and more. After enough of these conversations, I think I've figured out why.
 
 It comes down to the freedom to choose your AI tools. In both examples, they're having their tools dictated to them. I can choose the ones that I know produce vastly better outcomes.
 
+Tools like GitHub Copilot route every prompt through Microsoft's Azure proxy for pre-inference screening: safety checks, compliance filters, content exclusions, responsible AI guardrails. By the time your code reaches the model and comes back, it's been through several layers of corporate bubble wrap. The model underneath might be perfectly capable. You're just not getting the full thing.
+
+While Gemini is alot better than it used to be, the latest Opus and Codex models still run rings around it. I'm sure that'll change, but for now, that's just reality.
+
 So why are companies choosing these subpar tools?
 
-Here's how it usually goes. Some executive reads a Gartner report or sees a competitor announce an AI initiative. The mandate comes down: we're doing AI. Procurement looks at what they already pay for (Microsoft Copilot, Google Gemini, whoever) and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
+Heres how it normally goes. Some executive mandates "we're doing AI". Procurement looks at what they already pay for (Microsoft Copilot, Google Gemini, whoever) and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
 
-Other times it comes down to "this is what the security team has told us we can use." Which, in enterprise settings like banking, I totally get.
+Other times it comes down to "this is what the security team has told us we can use." Which, in a enterprise setting, I totally get.
 
-There's a technical reason too. Tools like GitHub Copilot route every prompt through Microsoft's Azure proxy for pre-inference screening: safety checks, compliance filters, content exclusions, responsible AI guardrails. By the time your code reaches the model and comes back, it's been through several layers of corporate bubble wrap. The model underneath might be perfectly capable. You're just not getting the full thing.
+The problem isn't AI coding agents. We're there. They work. Anthropic and OpenAI have said publicly that nearly 100% of there code is now written by AI. OpenClaw, the fastest-growing open-source project ever, is 100% live-coded.
 
-Developers install it. Some like it. Most find it fine at best. The quality gap between "best AI coding tool available right now" and "the thing we licensed" can be enormous. Claude Code can navigate a full codebase, run tests, and iterate autonomously. Some enterprise tools are still doing glorified autocomplete.
-
-Meanwhile, some random bloke is running fleets of agents with Claude Code and state-of-the-art models, shipping circles around them.
-
-The problem isn't AI coding agents. We're there. They work. Anthropic and OpenAI have said publicly that a significant portion of their own code is now written by AI.
-
-The issue is companies, arguably for good reasons, mandating which tools to use. And they're falling behind.
+The issue is companies, arguably for good reasons, mandating which tools to use.
 
 Amazon found this out the hard way.
 
-Earlier this year, Amazon internally mandated a tool called Kiro for its engineering teams. Around 1,500 engineers pushed back. Their position was that Claude Code was better and they wanted to keep using it. Leadership overruled them.
+Recently, Amazon internally mandated a tool called Kiro for its engineering teams. Around 1,500 engineers pushed back. Their position was that Claude Code was better and they wanted to keep using it. Leadership overruled them.
 
 What followed was rough. A 13-hour AWS outage. A 6-hour Amazon.com shopping outage. The tool those engineers were forced to adopt is now linked to a string of production incidents. I want to be careful here: outages are complicated, and I'm not saying Kiro caused all of it. But the timing is what it is, and the engineers who protested were apparently right about something.
 
