@@ -10,11 +10,11 @@ cover:
   alt: "Why your AI coding experience sucks"
 ---
 
-A mate of mine is a real developer (and a good one). I've always dabbled with code, but I've never done it professionally and wouldn't consider myself a developer in the traditional sense. I've always wondered what actual developers think about coding agents. I was talking to him about all the incredible things I was doing, and he gave me a wry smile, saying, "Yeah, but that's toy code. You're not working on production code." He went on to explain that he's been using GitHub Copilot, and it's allowed him to do things probably two or three times faster in terms of code refactoring. Based on what I see and read, this seems really low, but I didn't push back. I was thinking about it the whole drive home though.
+A mate of mine is a real developer (and a good one). I've always dabbled with code, but I've never done it professionally and wouldn't consider myself a developer in the traditional sense. I've been wondered what actual developers think about coding agents. I was talking to him about all the incredible things I was doing, and he gave me a wry smile that said, "Yeah, but that's toy code. You're not working on production code." He went on to explain that he's been using GitHub Copilot, and it's allowed him to do things probably two or three times faster in terms of code refactoring. Based on what I see and read, this seems really low, but I didn't push back. I was thinking about it the whole drive home though.
 
-Then last week I was working with a customer. Let's call him Michael. Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants. Half the time he ends up fighting the suggestions, having to copy in context manually from various sources. His conclusion is more or less the same as my mate's: AI coding is useful, yes, but a bit oversold.
+Then last week I was working with a customer. Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants. Half the time he ends up fighting the suggestions, having to copy in context manually from various sources. His conclusion is more or less the same as my mate's: AI coding is useful, yes, but a bit oversold.
 
-I've started noticing this pattern everywhere.
+I've started noticing this pattern more and more.
 
 I'm not a professional coder. But I am building a personal AI agent, several side projects, and half my presentations with Claude Code. I'm amazed by how much I can achieve. It's the most productive I've felt in years. We're not having the same experience at all.
 
