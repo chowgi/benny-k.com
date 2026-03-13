@@ -56,7 +56,7 @@ I'm sure there's other things I can't remember right now, but every time she scr
 
 **Memory is everything.** Clawdia wakes up fresh every session. No continuity except what's in the files. `SOUL.md` is personality. `AGENTS.md` is how she operates. `USER.md` is context about me. `MEMORY.md` is accumulated knowledge. The quality of those files is the quality of the agent. It took me a couple of weeks to take that seriously.
 
-**Research in, quality out.** She has a MongoDB knowledge base I call "The Vault." I throw everything into it. Articles, tweets, meeting notes, research. When I ask her to do something complex, the output quality correlates almost exactly with what I've put in.
+**Research in, quality out.** She has a MongoDB knowledge base I call "The Vault." I throw everything into it. Articles, tweets, research. When I ask her to do something complex, the output quality correlates almost exactly with what I've put in.
 
 **Trust is a cycle.** I'd delegate something. It'd go wrong. I'd pull back, add constraints, try again a bit further out. Five weeks in, I trust her with more than I did in week one. But I'm not at "runs everything while I sleep." Not quite.
 
