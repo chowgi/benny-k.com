@@ -1,7 +1,7 @@
 ---
 title: "Why Your AI Coding Experience Sucks (Probably)"
 date: 2026-03-12T09:00:00+11:00
-draft: true
+draft: false
 tags: ["ai", "developer-tools", "claude-code", "productivity"]
 description: "The AI coding divide isn't believers vs sceptics. It's people who get to choose their tools vs people who don't."
 cover:
