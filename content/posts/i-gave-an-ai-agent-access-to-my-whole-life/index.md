@@ -28,7 +28,7 @@ Clawdia will then give Cathy some free times. Cathy will say, "Yep, please book 
 
 But it's not just scheduling. I sent her a link to a YouTube video about kitchen lighting for our renovation. She watched it, extracted every tip, saved it to a file, and created a formatted Google Doc in my "Renovation 2026" Drive folder. Took about 90 seconds.
 
-Last week I was building a presentation for presentation to the devs. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard", yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used some of her notes that where genuinely good and that I had not thought about.
+Last week I was building a presentation for presentation to the devs. I sent her the PDF. She reviewed every slide, told me my title was too salesy ("The Modern Transactional Standard", yeah, fair call), pointed out that one of my anti-pattern examples would contradict a project I'm doing with the same customer, and wrote me speaker notes. All of that feedback was right. The talk went well. I used some of her notes that were genuinely good and that I had not thought about.
 
 Individually, none of these tasks are hard. A calendar check, a summarisation, a web search. But because Clawdia remembers every interaction, the usefulness compounds. She knows my accounts, my preferences, my projects, my wife's name. Five weeks of context makes every new request faster and more accurate than the last.
 

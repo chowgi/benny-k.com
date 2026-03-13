@@ -10,7 +10,7 @@ cover:
   alt: "Why your AI coding experience sucks"
 ---
 
-A mate of mine is a real developer (and a good one). I've always dabbled with code, but I've never done it professionally and wouldn't consider myself a developer in the traditional sense. I've been wondered what actual developers think about coding agents. I was talking to him about all the incredible things I was doing, and he gave me a wry smile that said, "Yeah, but that's toy code. You're not working on production code." He went on to explain that he's been using GitHub Copilot, and it's allowed him to do things probably two or three times faster in terms of code refactoring. Based on what I see and read, this seems really low, but I didn't push back. I was thinking about it the whole drive home though.
+A mate of mine is a real developer (and a good one). I've always dabbled with code, but I've never done it professionally and wouldn't consider myself a developer in the traditional sense. I've always wondered what actual developers think about coding agents. I was talking to him about all the incredible things I was doing, and he gave me a wry smile that said, "Yeah, but that's toy code. You're not working on production code." He went on to explain that he's been using GitHub Copilot, and it's allowed him to do things probably two or three times faster in terms of code refactoring. Based on what I see and read, this seems really low, but I didn't push back. I was thinking about it the whole drive home though.
 
 Then last week I was working with a customer. Smart guy, genuinely trying to get value from AI tooling. He's got a Gemini plugin running in VS Code, which his organisation rolled out. He's struggling with it. Nothing dramatic. It just doesn't quite do what he wants. Half the time he ends up fighting the suggestions, having to copy in context manually from various sources. His conclusion is more or less the same as my mate's: AI coding is useful, yes, but a bit oversold.
 
@@ -20,15 +20,15 @@ It comes down to the freedom to choose your AI tools. In both examples, they're 
 
 Tools like GitHub Copilot route every prompt through Microsoft's Azure proxy for pre-inference screening: safety checks, compliance filters, content exclusions, responsible AI guardrails. By the time your code reaches the model and comes back, it's been through several layers of corporate bubble wrap. The model underneath might be perfectly capable. You're just not getting the full thing.
 
-While Gemini is alot better than it used to be, the latest Opus and Codex models still run rings around it. I'm sure that'll change, but for now, that's just reality.
+While Gemini is a lot better than it used to be, the latest Opus and Codex models still run rings around it. I'm sure that'll change, but for now, that's just reality.
 
 So why are companies choosing these subpar tools?
 
-Heres how it normally goes. Some executive mandates "we're doing AI". Procurement looks at what they already pay for (Microsoft Copilot, Google Gemini, whoever) and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
+Here's how it normally goes. Some executive mandates "we're doing AI". Procurement looks at what they already pay for (Microsoft Copilot, Google Gemini, whoever) and finds a box they can tick. GitHub Copilot's bundled with the enterprise GitHub agreement. Gemini comes with Google Workspace. Done.
 
-Other times it comes down to "this is what the security team has told us we can use." Which, in a enterprise setting, I totally get.
+Other times it comes down to "this is what the security team has told us we can use." Which, in an enterprise setting, I totally get.
 
-The problem isn't AI coding agents. We're there. They work. Anthropic and OpenAI have said publicly that nearly 100% of there code is now written by AI. OpenClaw, the fastest-growing open-source project ever, is 100% live-coded.
+The problem isn't AI coding agents. We're there. They work. Anthropic and OpenAI have said publicly that nearly 100% of their code is now written by AI. OpenClaw, the fastest-growing open-source project ever, is 100% live-coded.
 
 The issue is companies, arguably for good reasons, mandating which tools to use.
 
