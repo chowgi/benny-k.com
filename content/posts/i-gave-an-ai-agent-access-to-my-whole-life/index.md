@@ -38,7 +38,7 @@ I had an idea for an AI voice receptionist for tradies. The kind of bloke who mi
 
 I described what I wanted to Clawdia over Telegram. Over a weekend she helped me build Sam, an AI receptionist who answers the phone in a natural Australian accent, has a conversation with the caller, takes their details, and sends me a summary. She set up the Twilio integration, configured the voice agent, wrote the webhook server, and got a phone number live.
 
-I'm not an engineer. I'm a Solutions Architect. I'm comfortable in a terminal but I'm not writing production Node.js from scratch. Clawdia handled the code. I handled the decisions. That division of labour is the thing nobody talks about enough.
+I'm not an engineer. I'm a Solutions Architect. I'm comfortable in a terminal but I'm no programmer. Clawdia handled the code. I handled the decisions. That division of labour is the thing nobody talks about enough.
 
 ## What went wrong
 
@@ -48,7 +48,7 @@ She gave Cathy dates for availability two weeks in the past because she didn't b
 
 She hallucinated Todoist tasks that didn't exist. I asked for my task list and she gave me one from memory instead of actually querying Todoist. The tasks sounded plausible. They were completely made up. That's the dangerous kind of hallucination. Not obviously wrong, just subtly wrong enough that you might act on it.
 
-I'm sure there's other things I can't remember right now, but every time she screws up, I add a rule. The operating manual is basically a list of things she's done wrong. It works though. She doesn't make the same mistake twice.
+I'm sure there's other things I can't remember right now, but every time she screws up we work on a fix, and she iteratively just gets better.
 
 ## What I actually learned
 
@@ -56,7 +56,7 @@ I'm sure there's other things I can't remember right now, but every time she scr
 
 **Memory is everything.** Clawdia wakes up fresh every session. No continuity except what's in the files. `SOUL.md` is personality. `AGENTS.md` is how she operates. `USER.md` is context about me. `MEMORY.md` is accumulated knowledge. The quality of those files is the quality of the agent. It took me a couple of weeks to take that seriously.
 
-**Research in, quality out.** She has a MongoDB knowledge base I call "The Vault." I throw everything into it. Articles, tweets, meeting notes, research. When I ask her to do something complex, the output quality correlates almost exactly with what I've put in. Garbage in, garbage out. Still true. Still underappreciated.
+**Research in, quality out.** She has a MongoDB knowledge base I call "The Vault." I throw everything into it. Articles, tweets, meeting notes, research. When I ask her to do something complex, the output quality correlates almost exactly with what I've put in.
 
 **Trust is a cycle.** I'd delegate something. It'd go wrong. I'd pull back, add constraints, try again a bit further out. Five weeks in, I trust her with more than I did in week one. But I'm not at "runs everything while I sleep." Not quite.
 
