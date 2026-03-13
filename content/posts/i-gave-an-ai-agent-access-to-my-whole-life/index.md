@@ -10,10 +10,6 @@ cover:
   alt: "I gave an AI agent access to my whole life"
 ---
 
-I spend too much time on X. In my feed, everyone's building autonomous agents and shipping production AI systems. People are running RL loops to squeeze performance out of models that were believed to be near 100% optimised by researchers who'd been doing this for 20+ years. Software engineers are debating whether they're already obsolete. I genuinely felt like I was falling behind.
-
-Then yesterday I stood in front of 50 developers at a customer to talk about scaling AI applications on MongoDB. It was the end of a long day of sessions, everyone was tired, and I had too much content to get through, so I mentioned OpenClaw (which has become my new obsession) and asked anyone interested to come chat afterwards. Blank stares. Not a single dev mentioned it to me for the rest of the day. I did get questions about my presentation, which I'll take. But it hit me: I'm not behind. I'm actually on the bleeding edge comparatively.
-
 Five weeks ago I set up an AI agent called Clawdia using OpenClaw. I expected to play with it for a weekend and move on. She's still running. She's become the most useful tool I've ever used, and I don't think I could go back.
 
 ## What OpenClaw actually is
