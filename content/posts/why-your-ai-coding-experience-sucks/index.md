@@ -1,5 +1,5 @@
 ---
-title: "Why Your AI Coding Experience Sucks (Probably)"
+title: "Why Your AI Coding Experience Might Suck"
 date: 2026-03-12T09:00:00+11:00
 draft: false
 tags: ["ai", "developer-tools", "claude-code", "productivity"]
@@ -10,7 +10,9 @@ cover:
   alt: "Why your AI coding experience sucks"
 ---
 
-Lately I've been wondering what an actual developer's experience is like with the current breed of coding agents. I see people doing incredible things on X/Twitter, and I'm doing things I have no business being able to achieve with my level of skill. But I wondered, was this the norm? Turns out it isn't.
+I'll preface this with: I've never been a professional developer, so take everything I say here with a grain of salt.
+
+But I'm noticing a trend in people's experience with the current generation of agentic coding tools. Lately I've been wondering what an actual developer's experience is like with the current breed of coding agents. I see so many people doing incredible things on X/Twitter and I myself am doing things I have no business being able to achieve with my level of skill. But I wondered, was this the norm? Turns out it isn't.
 
 I recently caught up with a mate who's a real software engineer. I started talking about my demos, my side hustles, what I've been doing with Clawdia, etc. He gave me a wry smile that said, "Yeah, but that's toy code. You're not working on production code." The discussion went on for a bit, then I asked him about his experience. He's been using GitHub Copilot, and it's let him do things probably two or three times faster for code refactoring. Based on what I experience and read, that seems really low. I didn't push back. I was thinking about it the whole drive home though.
 
