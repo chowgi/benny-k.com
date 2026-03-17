@@ -6,11 +6,11 @@ tags: ["openclaw", "ai", "agents", "enterprise", "personal-ai"]
 description: "Everyone keeps reaching for the shadow IT comparison. But what's happening with personal agents is something different — and it explains why they're arriving well ahead of enterprise ones."
 ---
 
-At GTC last week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. The whole thing.
+The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them.
 
-It's a good product. And it's also a confession.
+That's the story.
 
-The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them. That's the story.
+At GTC last week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. It's a good product. And it's a confession.
 
 Everyone keeps reaching for the shadow IT comparison. Personal agents as rogue software, slipping past the IT department's radar. I get why — it has that same rebellious energy. But shadow IT was always about *using* unapproved tools. What's happening now is different. People are *building* their own tools. Without developers. Without a ticket system. Without waiting for roadmap prioritisation.
 
