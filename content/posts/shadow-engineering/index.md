@@ -12,7 +12,7 @@ That's the story.
 
 At GTC last week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. It's a good product. And it's a confession.
 
-I talk to organisations every day that are trying to build enterprise agents. And outside of agentic coding — which works, and works well — most of them are struggling to deliver anything that actually changes how the business operates. The demos are fine. The production value is... not.
+I talk to organisations every day that are trying to build enterprise agents. And outside of agentic coding — which works, and works well — most of them are struggling to deliver anything that actually changes how the business operates. The demos are fine. The production value is... not. (OpenAI just declared a "code red" and pivoted its entire company toward coding and enterprise, because that's the one use case that's actually delivering. That tells you something.)
 
 Meanwhile, individuals are quietly building personal agents and they're working. I've been thinking about why, and I keep coming back to something that feels a lot like shadow IT — except it's not quite that.
 
