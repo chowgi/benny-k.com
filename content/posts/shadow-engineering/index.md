@@ -6,9 +6,11 @@ tags: ["openclaw", "ai", "agents", "enterprise", "personal-ai"]
 description: "Everyone keeps reaching for the shadow IT comparison. But what's happening with personal agents is something different — and it explains why they're arriving well ahead of enterprise ones."
 ---
 
-Om Malik wrote something last week that stuck with me. He compared OpenClaw to WordPress — not the product, but the feeling. The collapse of the permission structure. Anyone can now do the thing that used to require someone else's help.
+At GTC last week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. The whole thing.
 
-He's right. But I think he's describing something slightly bigger than he realises.
+It's a good product. And it's also a confession.
+
+The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them. That's the story.
 
 Everyone keeps reaching for the shadow IT comparison. Personal agents as rogue software, slipping past the IT department's radar. I get why — it has that same rebellious energy. But shadow IT was always about *using* unapproved tools. What's happening now is different. People are *building* their own tools. Without developers. Without a ticket system. Without waiting for roadmap prioritisation.
 
