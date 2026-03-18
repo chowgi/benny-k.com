@@ -20,7 +20,7 @@ Shadow IT was people using unapproved tools. Dropbox instead of the network driv
 
 It also explains why the personal agent is arriving well ahead of the enterprise one. Enterprise agents are stuck — not just because of procurement friction, though that's real. The deeper problem is that the person building the agent isn't the person using it. You end up with something built around what someone *thinks* users want, filtered through a product spec, a security review, and whatever made it onto the roadmap this quarter. The feedback loop is slow, the intent is approximate. With a personal agent, you're the builder and the user. You notice it's doing something annoying and you fix it that afternoon. The intent is perfect because it's yours.
 
-I'm already doing this. I use my own agent for account research before customer calls, to track interactions with key contacts, to surface things I'd otherwise miss. None of that is IT-approved — it's just my agent, shaped around my actual job, doing the things generic enterprise software doesn't quite get to. I'm probably not alone in that.
+I'm already doing this. I use my own agent for account research before customer calls, to track interactions with key contacts, to surface things I'd otherwise miss. I have built my agent to be shaped around my actual job, doing the things generic enterprise AI solutions don't quite get to. I'm probably not alone in that.
 
 Here's what I think happens next: BYOA. Bring your own agent. And look at what NVIDIA just announced — rather than IT building the agents people need, NemoClaw gives individuals enterprise-approved infrastructure to build their own.
 
@@ -28,4 +28,4 @@ Here's what I think happens next: BYOA. Bring your own agent. And look at what N
 
 That's a fundamentally different model to how enterprise software has ever worked, and it's the smart read on where this is going. Not the enterprise dictating the AI use case to employees. Employees deciding what they actually need, inside a sandbox the enterprise can live with.
 
-The winners will be the organisations that give people the tools to build what they need, not the ones who try to build it for them.
+IMO the winners will be the organisations that give people the tools to build what they need, not the ones who try to build it for them.
