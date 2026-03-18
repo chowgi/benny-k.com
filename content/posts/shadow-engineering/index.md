@@ -28,4 +28,4 @@ Here's what I think happens next: BYOA. Bring your own agent. And look at what N
 
 That's a fundamentally different model to how enterprise software has ever worked, and it's the smart read on where this is going. Not the enterprise dictating the AI use case to employees. Employees deciding what they actually need, inside a sandbox the enterprise can live with.
 
-The vendors who figure that out first won't need to build the best enterprise agent. They'll just need to get out of the way fast enough.
+The winners will be the organisations that give people the tools to build what they need, not the ones who try to build it for them.
