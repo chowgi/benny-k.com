@@ -1,7 +1,11 @@
 ---
 title: "Shadow Engineering"
 date: 2026-03-18T10:00:00+11:00
-draft: true
+draft: false
+cover:
+  image: "cover.png"
+  relative: true
+  alt: "Shadow Engineering"
 tags: ["openclaw", "ai", "agents", "enterprise", "personal-ai"]
 description: "The enterprise AI playbook is changing — not because IT got better at building agents, but because individuals stopped waiting for them to."
 ---
