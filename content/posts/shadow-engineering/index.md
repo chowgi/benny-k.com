@@ -3,7 +3,7 @@ title: "Shadow Engineering"
 date: 2026-03-18T10:00:00+11:00
 draft: true
 tags: ["openclaw", "ai", "agents", "enterprise", "personal-ai"]
-description: "I talk to organisations building enterprise agents every day. Most of them are stuck. Meanwhile, individuals are quietly building their own — and it's working. Here's why."
+description: "The enterprise AI playbook is changing — not because IT got better at building agents, but because individuals stopped waiting for them to."
 ---
 
 The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them. That's the story.
