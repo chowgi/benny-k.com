@@ -6,9 +6,9 @@ tags: ["openclaw", "ai", "agents", "enterprise", "personal-ai"]
 description: "The enterprise AI playbook is changing — not because IT got better at building agents, but because individuals stopped waiting for them to."
 ---
 
-The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them. That's the story.
+The biggest GPU company on the planet just built an enterprise wrapper around a free open-source tool because their customers are already using it — and IT can't stop them.
 
-At GTC last week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. It's a good product, and it's a confession.
+At GTC this week, NVIDIA announced NemoClaw — a software stack that deploys secure AI agents on OpenClaw with a single command. Enterprise guardrails, audit trails, sandboxed execution. It's a good product, and it's a confession.
 
 I talk to organisations every day that are trying to build enterprise agents. To be clear: the first wave of enterprise AI worked. Chatbots, RAG pipelines, hybrid search — organisations have genuinely nailed that stuff, and it's delivering real value. But agentic is a different problem entirely. Outside of coding — which works, and works well — most organisations are struggling to build agents that actually do things autonomously on behalf of users in a way that changes how the business operates. The demos are fine. The production value is... not. OpenAI just declared a "code red" and pivoted its entire company toward coding and enterprise because that's the one agentic use case that's actually delivering. That should tell you something about where we are.
 
