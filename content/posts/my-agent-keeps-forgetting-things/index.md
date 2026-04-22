@@ -3,7 +3,7 @@ title: "My Agent Keeps Forgetting Things"
 date: 2026-04-23T09:00:00+10:00
 draft: false
 tags: ["openclaw", "ai", "agents", "memory", "claude"]
-description: "Four months of running a personal AI agent taught me that memory is the hardest problem. Here's what breaks, what I built to fix it, and what's still broken."
+description: "Three months of running a personal AI agent taught me that memory is the hardest problem. Here's what breaks, what I built to fix it, and what's still broken."
 cover:
   image: "cover.png"
   relative: true
@@ -16,7 +16,7 @@ And then I forgot it was ever a problem.
 
 That's kind of how working with an AI assistant actually goes. You hit something broken, you get the agent to fix it, it breaks differently, you prompt it to try and fix it again, and then at some point it just starts working and you can't even remember when it crossed the line. Nobody writes about that part. They write about the setup, the first magical moment you see it just figures something out on its own, maybe the architecture diagram. They don't write about the three weeks where your agent keeps suggesting cauliflower rice even though you've told it four times you hate it.
 
-I've been running Clawdia for about four months now. Claude-powered, multi-model, integrated with basically everything — email, calendar, personal CRM, task management, a MongoDB-backed knowledge vault. She runs on a server, has cron jobs, spawns sub-agents for parallel work, built and iterated on a custom UI to make it easier to work on things when Telegram doesn't quite cut it. I depend on her daily for real work.
+I've been running Clawdia for about three months now. Claude-powered, multi-model, integrated with basically everything — email, calendar, personal CRM, task management, a MongoDB-backed knowledge vault. She runs on a server, has cron jobs, spawns sub-agents for parallel work, built and iterated on a custom UI to make it easier to work on things when Telegram doesn't quite cut it. I depend on her daily for real work.
 
 The single hardest problem has been memory.
 
