@@ -25,9 +25,9 @@ I'd been keeping an eye on Hermes for a while but hadn't made the jump. What act
 
 Messier than expected, but not in a bad way.
 
-Hermes has a migration tool — `hermes claw migrate` — which sounds like it'd do most of the heavy lifting. It would have, except OpenClaw was running on a completely separate EC2 instance. The tool looks for a local `~/.openclaw` directory and finds nothing. So everything had to be transferred manually.
+There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh felt like the right call — rebuild it with that knowledge, make better decisions this time, and ditch the stuff that had accumulated for no good reason.
 
-That turned out to be fine, actually. It forced a genuine audit of what was worth keeping. The answer: not as much as I thought. A lot of the OpenClaw setup was plumbing specific to that environment — shell scripts wrapping Google Workspace, a Node.js CLI for YouTube transcripts, various one-off hacks that'd accumulated over months. Most of it got rebuilt from scratch in an hour or two, cleaner this time.
+That turned out to be the right instinct. It forced a genuine audit of what was worth keeping. The answer: not as much as I thought. A lot of the OpenClaw setup was plumbing specific to that environment — shell scripts wrapping Google Workspace, a Node.js CLI for YouTube transcripts, various one-off hacks that'd accumulated over months. Most of it got rebuilt from scratch in an hour or two, cleaner this time.
 
 What did migrate directly:
 - MongoDB Atlas credentials and the entire vault (documents, entities, contacts, conversation history)
