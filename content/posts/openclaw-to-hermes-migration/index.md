@@ -27,6 +27,8 @@ Messier than expected, but not in a bad way.
 
 There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh felt like the right call — rebuild it with that knowledge, make better decisions this time, and ditch the stuff that had accumulated for no good reason.
 
+One thing that made this significantly easier: I had a private GitHub repo backing up my OpenClaw config — all the skills, tools, memory files, and agent identity. Not as a live sync, just a manual backup I'd kept reasonably up to date. That repo became my reference for the rebuild. I could see exactly what I'd built, what each tool did, what the skills contained, and make deliberate choices about what to carry forward versus what to leave behind. If you're running any kind of personal agent setup, back it up. You'll thank yourself later.
+
 That turned out to be the right instinct. It forced a genuine audit of what was worth keeping. The answer: not as much as I thought. A lot of the OpenClaw setup was plumbing specific to that environment — shell scripts wrapping Google Workspace, a Node.js CLI for YouTube transcripts, various one-off hacks that'd accumulated over months. Most of it got rebuilt from scratch in an hour or two, cleaner this time.
 
 What did migrate directly:
