@@ -50,9 +50,11 @@ What got binned:
 
 This is the one that mattered most.
 
-In OpenClaw, memory worked roughly like this: the agent had a set of tools — `remember_this`, `recall`, `search_vault`. If something was worth saving, you'd either ask it to save, or it would offer to. If you wanted it to know something, you'd ask it to look it up. The vault was a database you queried on demand.
+Worth noting: OpenClaw and Hermes are actually the same project — Nous Research renamed it. So this is less a migration between two different things and more a rebuild on a newer version of the same foundation. Which makes the memory improvements even more interesting, because they reflect deliberate decisions made between versions.
 
-The fundamental problem with this model is that it relies on the agent correctly identifying what's worth remembering, and then actually executing the save. Those are two separate failure modes, and both happened regularly. I'd watch the agent say "I've saved that to memory" in a session, come back the next day, and it clearly hadn't. Or it had technically saved it, but in a format that was never surfaced again unless I specifically asked.
+In OpenClaw, persistent memory lived in a flat `CLAUDE.md` file — injected into every session, manually managed. If you wanted the agent to remember something, you asked it to update the file. If the context window filled up, you ran `/compact` and it summarised older messages into a block at the top of the conversation. It worked, sort of. There was also a knowledge vault you could query on demand.
+
+The problems were in the execution. The agent would say "I've saved that to memory", and sometimes it had, but in a vague way that was never surfaced again unless you specifically asked. The `/compact` summaries were lossy — context got dropped that you didn't know was gone until you needed it. And the vault was an explicit lookup, not something the agent checked automatically. You had to know what you'd stored to ask for it back.
 
 Hermes inverts this. Memory is injected directly into the system prompt on every turn. There's a user profile (who you are, your preferences, how you communicate) and a memory notes store (environment facts, tool quirks, project conventions). Both get loaded before the agent sees your first message. There's no "recall" step. The agent just... knows.
 
