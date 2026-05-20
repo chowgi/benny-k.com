@@ -5,7 +5,7 @@ draft: true
 tags: ["ai", "hermes", "openclaw", "personal-agent", "productivity"]
 ---
 
-I've been running a personal AI agent since the start of the year. It started on OpenClaw — a self-hosted setup with a customised assistant called Clawdia (yes, with a claw, because the mascot is a crab, and yes that made more sense at the time). It handled my Todoist tasks, summarised YouTube videos, managed contacts, talked to MongoDB Atlas, and generally made itself useful.
+Pretty much everyone I know is aware I have a personal AI agent called Clawdia. It started on OpenClaw — a heavily customised self-hosted setup on my space macbook. It handled my Todoist tasks, summarised YouTube videos, managed contacts, talked to MongoDB Atlas, and generally made itself useful.
 
 This week I've been migrating the whole thing to a [Hermes](https://github.com/NousResearch/hermes-agent)-based framework — an open-source agent project from Nous Research. This is what I found.
 
@@ -17,7 +17,7 @@ OpenClaw worked. That's the honest answer. I wasn't fleeing a burning building.
 
 But I'd noticed a few things that were starting to bother me. The memory system felt unreliable — I'd ask the assistant to remember something, it would say "noted!", and then the next session it was gone. The vault was treated as something you explicitly queried, not something the agent was aware of by default. I've written about these frustrations in previous posts, so I won't rehash them here.
 
-I'd been keeping an eye on Hermes for a while but hadn't made the jump. What actually pushed me over the edge was a single comment on a LinkedIn post — someone pointed me at Hermes and said it had solved a lot of the memory problems I was describing. That was enough. I decided to take a proper look.
+I'd been keeping an eye on Hermes for a while but hadn't made the jump. What actually pushed me over the edge was a single comment on a LinkedIn post — someone pointed me at Hermes and said it had solved a lot of the memory problems I was describing. Not sure why that made me take the plung to be honest but it was enough.
 
 ---
 
@@ -26,8 +26,6 @@ I'd been keeping an eye on Hermes for a while but hadn't made the jump. What act
 Messier than expected, but not in a bad way.
 
 There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh felt like the right call — rebuild it with that knowledge, make better decisions this time, and ditch the stuff that had accumulated for no good reason.
-
-One thing that made this significantly easier: I had a private GitHub repo backing up my OpenClaw config — all the skills, tools, memory files, and agent identity. Not as a live sync, just a manual backup I'd kept reasonably up to date. That repo became my reference for the rebuild. I could see exactly what I'd built, what each tool did, what the skills contained, and make deliberate choices about what to carry forward versus what to leave behind. If you're running any kind of personal agent setup, back it up. You'll thank yourself later.
 
 That turned out to be the right instinct. It forced a genuine audit of what was worth keeping. The answer: not as much as I thought. A lot of the OpenClaw setup was plumbing specific to that environment — shell scripts wrapping Google Workspace, a Node.js CLI for YouTube transcripts, various one-off hacks that'd accumulated over months. Most of it got rebuilt from scratch in an hour or two, cleaner this time.
 
@@ -51,8 +49,6 @@ What got binned:
 ## The memory problem
 
 This is the one that mattered most.
-
-First, a correction to something I got wrong earlier: OpenClaw and Hermes are not the same project. OpenClaw ([github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)) is a separate TypeScript/Node.js framework — a genuine competitor to Hermes, not a predecessor. Hermes does ship a `hermes claw migrate` tool specifically for OpenClaw users, which tells you something about how common this migration path is.
 
 OpenClaw's memory architecture is built entirely around plain Markdown files in your workspace. `MEMORY.md` loads into every session. Daily logs (`memory/YYYY-MM-DD.md`) auto-load for today and yesterday. Your agent identity files — `SOUL.md`, `AGENTS.md`, `USER.md` — all inject at session start. The philosophy is explicit: *the model only remembers what gets saved to disk.* No hidden state.
 
