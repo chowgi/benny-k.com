@@ -89,8 +89,6 @@ The infrastructure-over-product philosophy is a good fit for how I want to work.
 
 The migration itself took maybe two full sessions of solid work. The messy bits were mostly specific to my setup — two machines, manually transferred credentials, a bunch of accumulated hacks that needed untangling anyway. If you're starting fresh, it'd be faster.
 
-One last thing. I renamed the assistant. She's Claudia now. The claw pun doesn't quite land on a framework called Hermes.
-
 ---
 
 *Hermes Agent is open source: [github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)*
