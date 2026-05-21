@@ -5,7 +5,7 @@ draft: true
 tags: ["ai", "hermes", "openclaw", "personal-agent", "productivity", "mongodb"]
 ---
 
-I have a personal AI agent. Her name is (was — more on that in a bit) Clawdia, she runs on a spare MacBook, and she's genuinely useful — Todoist, YouTube summaries, contacts, MongoDB Atlas. I had grand plans to run local models but that's a different story. This week I migrated her from OpenClaw to Hermes. Here's what I found.
+Clawdia is now Claudia. The "Claw" pun stopped making sense when I moved her off OpenClaw onto Hermes. That's the least interesting thing that happened.
 
 ---
 
