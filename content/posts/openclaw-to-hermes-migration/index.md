@@ -5,9 +5,7 @@ draft: true
 tags: ["ai", "hermes", "openclaw", "personal-agent", "productivity"]
 ---
 
-Pretty much everyone I know is aware I have a personal AI agent called Clawdia. It started on OpenClaw — a heavily customised self-hosted setup on my space macbook. It handled my Todoist tasks, summarised YouTube videos, managed contacts, talked to MongoDB Atlas, and generally made itself useful.
-
-This week I've been migrating the whole thing to a [Hermes](https://github.com/NousResearch/hermes-agent)-based framework — an open-source agent project from Nous Research. This is what I found.
+I have a personal AI agent. Her name is Clawdia, she runs on a spare MacBook, and she's genuinely useful — Todoist, YouTube summaries, contacts, MongoDB Atlas. I had grand plans to run local models but that's a different story. This week I migrated her from OpenClaw to Hermes. Here's what I found.
 
 ---
 
@@ -23,13 +21,13 @@ I'd been keeping an eye on Hermes for a while but hadn't made the jump. What act
 
 ## The setup thing
 
-I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted.
+I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted. No "setup wizard like Openclaw".
 
 I genuinely didn't find that.
 
-My theory: those people were approaching it like it was 2023. Open the README, follow instructions line by line, manually edit YAML, copy-paste credentials, wonder why it doesn't work. That's the old way of doing this stuff. Yeah, that way is annoying.
+My theory: those people were approaching it like it was 2023. Open the README, follow instructions line by line, manually edit YAML, copy-paste credentials, wonder why it doesn't work. That's the old way of doing this stuff.
 
-I did it differently. I opened Claude Code, pointed it at the Hermes repo, and said something like: "get me up and running — Telegram connected, MongoDB Atlas as the memory backend, sort out the config." Then went and made a coffee.
+in 2026 you open a Claude Code session, point it at the Hermes repo, and say "get me up and running — Telegram connected, MongoDB Atlas as the memory backend, sort out the config." Then went and made a coffee.
 
 It sorted it out. Not magically — I had to clarify a few things, check some outputs, make some decisions. But the scaffolding, the config structure, figuring out which settings went where — all handled.
 
@@ -45,24 +43,11 @@ The barrier to entry on tools like Hermes hasn't really dropped because the tool
 
 Messier than expected, but not in a bad way.
 
-There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh felt like the right call — rebuild it with that knowledge, make better decisions this time, and ditch the stuff that had accumulated for no good reason.
+There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh and rebuilding with the knowledge gained from working with Openclaw turned out to be the right instinct. It forced a genuine audit of what was worth keeping.
 
-That turned out to be the right instinct. It forced a genuine audit of what was worth keeping. The answer: not as much as I thought. A lot of the OpenClaw setup was plumbing specific to that environment — shell scripts wrapping Google Workspace, a Node.js CLI for YouTube transcripts, various one-off hacks that'd accumulated over months. Most of it got rebuilt from scratch in an hour or two, cleaner this time.
+There was a lot of plumbing specific to Openclaw — shell scripts wrapping Google Workspace, various one-off hacks that'd accumulated over months, tools and crons jobs I created and never really used. I rebuilt the stuff I used all the time in an hour or two, cleaner this time. 
 
-What did migrate directly:
-- MongoDB Atlas credentials and the entire vault (documents, entities, contacts, conversation history)
-- Google Workspace OAuth tokens (copied across, repointed to Hermes token paths)
-- Todoist API token
-- X API credentials
-- Writing voice and style notes
-
-What got rebuilt:
-- All tool implementations (native Python this time, no CLI wrappers)
-- Skills (Hermes has a first-class skill system; none of my OpenClaw skills translated directly)
-- Cron jobs (different scheduling system entirely)
-
-What got binned:
-- A bunch of lifestyle cron jobs that I'd stopped actually reading anyway
+For everything else I ran Openclaw in parallel  for a week or two, when I would ask something from Claudia that I relised  that I hadn't migrated I got Clawdia to explain the setup then gave it Claudia (I know confusing) to implment. Then I just did a final commit of Clawdia to her repo and gave Claudia access. I am still discovering the odd little useful thing that didn't come accross but access to the repo is enough for Claudia to figure it out. 
 
 ---
 
