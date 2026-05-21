@@ -15,19 +15,19 @@ OpenClaw worked. That's the honest answer. I wasn't fleeing a burning building.
 
 But I'd noticed a few things that were starting to bother me. The memory system felt unreliable — I'd ask the assistant to remember something, it would say "noted!", and then the next session it was gone. The vault was treated as something you explicitly queried, not something the agent was aware of by default. I've written about these frustrations in previous posts, so I won't rehash them here.
 
-I'd been keeping an eye on Hermes for a while but hadn't made the jump. What actually pushed me over the edge was a single comment on a LinkedIn post — someone pointed me at Hermes and said it had solved a lot of the memory problems I was describing. Not sure why that made me take the plung to be honest but it was enough.
+I'd been keeping an eye on Hermes for a while but hadn't made the jump. What actually pushed me over the edge was a single comment on a LinkedIn post — someone pointed me at Hermes and said it had solved a lot of the memory problems I was describing. Not sure why that made me take the plunge to be honest, but it was enough.
 
 ---
 
 ## The setup thing
 
-I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted. No "setup wizard like Openclaw".
+I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted. No setup wizard like OpenClaw.
 
 I genuinely didn't find that.
 
 My theory: those people were approaching it like it was 2023. Open the README, follow instructions line by line, manually edit YAML, copy-paste credentials, wonder why it doesn't work. That's the old way of doing this stuff.
 
-in 2026 you open a Claude Code session, point it at the Hermes repo, and say "get me up and running — Telegram connected, MongoDB Atlas as the memory backend, sort out the config." Then went and made a coffee.
+In 2026 you open a Claude Code session, point it at the Hermes repo, and say "get me up and running — Telegram connected, MongoDB Atlas as the memory backend, sort out the config." Then go and make a coffee.
 
 It sorted it out. Not magically — I had to clarify a few things, check some outputs, make some decisions. But the scaffolding, the config structure, figuring out which settings went where — all handled.
 
@@ -43,11 +43,11 @@ The barrier to entry on tools like Hermes hasn't really dropped because the tool
 
 Messier than expected, but not in a bad way.
 
-There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh and rebuilding with the knowledge gained from working with Openclaw turned out to be the right instinct. It forced a genuine audit of what was worth keeping.
+There is a migration tool — `hermes claw migrate` — but from what I'd read it was flaky, and honestly I didn't want to use it anyway. Having built OpenClaw from scratch I knew exactly what I'd set up and why. Starting fresh and rebuilding with the knowledge gained from working with OpenClaw turned out to be the right instinct. It forced a genuine audit of what was worth keeping.
 
-There was a lot of plumbing specific to Openclaw — shell scripts wrapping Google Workspace, various one-off hacks that'd accumulated over months, tools and crons jobs I created and never really used. I rebuilt the stuff I used all the time in an hour or two, cleaner this time. 
+There was a lot of plumbing specific to OpenClaw — shell scripts wrapping Google Workspace, various one-off hacks that'd accumulated over months, tools and cron jobs I'd created and never really used. I rebuilt the stuff I actually used in an hour or two, cleaner this time.
 
-For everything else I ran Openclaw in parallel  for a week or two, when I would ask something from Claudia that I relised  that I hadn't migrated I got Clawdia to explain the setup then gave it Claudia (I know confusing) to implment. Then I just did a final commit of Clawdia to her repo and gave Claudia access. I am still discovering the odd little useful thing that didn't come accross but access to the repo is enough for Claudia to figure it out. 
+For everything else I ran OpenClaw in parallel for a week or two. When I asked Clawdia for something I realised hadn't been migrated, I'd get her to explain the setup, then hand that to Claude Code to implement in the Hermes config. Eventually I did a final commit and gave Claude Code access to the old repo. I'm still occasionally discovering something that didn't make the trip — but having access to the repo is enough for Clawdia to figure it out.
 
 ---
 
