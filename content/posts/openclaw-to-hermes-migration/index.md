@@ -21,6 +21,26 @@ I'd been keeping an eye on Hermes for a while but hadn't made the jump. What act
 
 ---
 
+## The setup thing
+
+I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted.
+
+I genuinely didn't find that.
+
+My theory: those people were approaching it like it was 2023. Open the README, follow instructions line by line, manually edit YAML, copy-paste credentials, wonder why it doesn't work. That's the old way of doing this stuff. Yeah, that way is annoying.
+
+I did it differently. I opened Claude Code, pointed it at the Hermes repo, and said something like: "get me up and running — Telegram connected, MongoDB Atlas as the memory backend, sort out the config." Then went and made a coffee.
+
+It sorted it out. Not magically — I had to clarify a few things, check some outputs, make some decisions. But the scaffolding, the config structure, figuring out which settings went where — all handled.
+
+There are things an agent genuinely can't do for you. You need to create the Telegram bot yourself in BotFather and grab the token. You need to whitelist your server IP in Atlas. Anything that involves clicking around in a third-party console — that's yours. But that's twenty minutes, not a hard problem.
+
+The rest? Let the agent figure it out.
+
+The barrier to entry on tools like Hermes hasn't really dropped because the tools got simpler. It's dropped because the *way* you deal with complexity has changed. Pointing a coding agent at a repo and saying "help me set this up" works. It works well.
+
+---
+
 ## What the migration actually looked like
 
 Messier than expected, but not in a bad way.
