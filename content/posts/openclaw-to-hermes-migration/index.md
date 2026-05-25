@@ -11,15 +11,15 @@ Clawdia is now Claudia. The "Claw" pun stopped making sense when I moved her off
 
 ## Why migrate at all
 
-OpenClaw worked. That's the honest answer. I wasn't fleeing a burning building.
+OpenClaw worked great. That's the honest answer. I wasn't fleeing a burning building.
 
-But I'd noticed a few things that were starting to bother me. The memory system felt unreliable — I'd ask the assistant to remember something, it would say "noted!", and then the next session it was gone. The vault was treated as something you explicitly queried, not something the agent was aware of by default. I've written about these frustrations in previous posts, so I won't rehash them here.
+But I'd noticed a few things that were starting to bother me. The memory system felt unreliable mainly because the vault was treated as something you explicitly queried, not something the agent was aware of by default. I've written about these frustrations in previous posts, so I won't rehash them here.
 
 I'd been keeping an eye on Hermes for a while but hadn't made the jump. What actually pushed me over the edge was a single comment on a LinkedIn post — someone I don't know pointed me at Hermes and said it had solved a lot of the memory problems I was describing. Not sure why that was enough, but it was.
 
 ---
 
-## The setup thing
+## The setup
 
 I saw a few comments while researching Hermes saying it was hard to configure. Fiddly, lots of moving parts, not for the faint-hearted. No setup wizard like OpenClaw.
 
@@ -27,15 +27,13 @@ I genuinely didn't find that.
 
 My theory: those people were approaching it like it was 2023. Open the README, follow instructions line by line, manually edit YAML, copy-paste credentials, wonder why it doesn't work. That's the old way of doing this stuff.
 
-In 2026 you open a Claude Code session, point it at the repo, and say "get me up and running — deploy an EC2 instance, connect Telegram, set up MongoDB Atlas as the memory backend, sort out the config." Then go and make a coffee.
+In 2026 you open a Claude Code /Cursor session, point it at the repo, and say "get me up and running on a EC2 instance and connect Telegram." Then go and make a coffee.
 
 It sorted it out. Not magically — I had to clarify a few things, check some outputs, make some decisions. But the scaffolding, the config structure, figuring out which settings went where — all handled.
 
 There are things an agent genuinely can't do for you. You need to create the Telegram bot yourself in BotFather and grab the token. You need to whitelist your server IP in Atlas. Anything that involves clicking around in a third-party console — that's yours. But that's 10 minutes, not a hard problem.
 
 The rest? Let the Claude, Codex, or Cursor-based agent figure it out.
-
-Most importantly, the final step was renaming the agent to Claudia because the "Claw" pun no longer worked. I know that's lame. I'm not going to argue it's not.
 
 ---
 
@@ -47,7 +45,7 @@ There is a migration tool — `hermes claw migrate` — but from what I'd read i
 
 There was a lot of plumbing specific to OpenClaw — shell scripts wrapping Google Workspace, various one-off hacks that'd accumulated over months, tools and cron jobs I'd created and never really used. I rebuilt the stuff I actually used in an hour or two, cleaner this time.
 
-For everything else I ran OpenClaw in parallel for a week or two. When I asked Claudia for something I realised hadn't been migrated, I'd get her to explain the setup, then hand that to Claude Code to implement in the Hermes config. Eventually I did a final commit and gave Claude Code access to the old repo. I then shut down OpenClaw for good. I'm still occasionally discovering something that didn't make the trip — but having access to the repo is enough for Claudia to figure it out.
+For everything else I ran OpenClaw in parallel for a week or two. When I asked Claudia for something I realised hadn't been migrated, I'd get her to explain the setup, then hand that to Claude Code to implement in the Hermes config. Eventually I did a final commit and gave Claudia access to the Clawdia repo. I then shut down OpenClaw for good. I'm still occasionally discovering something that didn't make the trip — but having access to the repo is enough for Claudia to figure it out.
 
 ---
 
