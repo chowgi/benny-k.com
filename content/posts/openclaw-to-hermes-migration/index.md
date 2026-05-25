@@ -3,6 +3,10 @@ title: "What I learned migrating my personal AI agent from OpenClaw to Hermes"
 date: 2026-05-14
 draft: false
 tags: ["ai", "hermes", "openclaw", "personal-agent", "productivity", "mongodb"]
+cover:
+  image: "cover.png"
+  relative: true
+  alt: "Migrating my personal AI agent from OpenClaw to Hermes"
 ---
 
 Clawdia is now Claudia. The "Claw" pun stopped making sense when I moved her off OpenClaw onto Hermes. That's the least interesting thing that happened.
