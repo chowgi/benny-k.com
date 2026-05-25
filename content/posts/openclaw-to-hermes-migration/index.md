@@ -1,7 +1,7 @@
 ---
 title: "What I learned migrating my personal AI agent from OpenClaw to Hermes"
 date: 2026-05-14
-draft: true
+draft: false
 tags: ["ai", "hermes", "openclaw", "personal-agent", "productivity", "mongodb"]
 ---
 
