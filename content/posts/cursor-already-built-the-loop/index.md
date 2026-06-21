@@ -1,9 +1,13 @@
 ---
 title: "Prompting is dead. It's all about loops."
 date: 2026-06-19
-draft: true
+draft: false
 tags: ["cursor", "agents", "engineering", "ai-coding"]
 description: "Everyone's talking about loop engineering. Cursor shipped it already."
+cover:
+  image: cover.png
+  relative: true
+  alt: "A circular agent loop with terminal, checkmark, code, and gear icons on a dark navy background"
 ---
 
 Prompting is the new COBOL. Still technically works. Still widely practiced. Ancient.
