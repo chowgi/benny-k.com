@@ -12,7 +12,7 @@ Boris Cherny — the guy who built Claude Code — said it straight: "I don't pr
 
 Peter Steinberger said the same thing. 2.2 million people saw it. The point isn't subtle: the work has moved up a level. You don't write the code anymore. You write the system that writes the code.
 
-Here's what nobody in that conversation is saying clearly enough: if you're already using Cursor, you have the infrastructure. All of it. You've just been thinking about it wrong.
+Most people reading that nod along and then go back to typing prompts. Because nobody actually explains what a loop is, why it's different from what you're already doing, or why you should give a shit. So let's do that.
 
 ## A loop is four steps
 
