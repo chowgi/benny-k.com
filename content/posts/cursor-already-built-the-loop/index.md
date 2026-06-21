@@ -20,23 +20,21 @@ Set a goal. Act. Check whether you're done. If not, feed the error back and go a
 
 That's it. You stop typing prompts. The model becomes a subroutine your loop calls. What changes between a toy loop and a production one is what you plug in at each step.
 
-## What those steps look like in Cursor
+## Every production loop needs six things
 
-Every production loop needs six things. Here's what Cursor calls them.
+**A trigger** — something that starts the run without you. A schedule, a webhook, a file change, a PR label. Without this you're not running a loop, you're just doing the same thing repeatedly by hand.
 
-**A trigger** — something that starts the run without you. A schedule, a webhook, a PR label. Without this you're not running a loop, you're just doing the same thing repeatedly by hand. Cursor calls this Automations.
+**Isolation** — a private environment per agent so two concurrent runs can't overwrite each other. Once you're running more than one agent at a time, this stops being optional.
 
-**Isolation** — a private environment per agent so two concurrent runs can't overwrite each other. Cloud agents spin up in isolated VMs. Each run gets its own sandbox.
+**Written-down context** — the conventions, standards, and project rules the agent reads on every run. Skip this and the loop re-derives your entire codebase from scratch each pass, guessing at the gaps every time.
 
-**Written-down context** — the conventions, standards, and project rules the agent reads on every run. Skip this and the loop re-derives your entire codebase from scratch each pass. That's Rules and Skills. They exist so the agent isn't guessing at your standards every single time.
+**Tool access** — connectors to your issue tracker, CI, database, chat. So the loop opens the PR, links the ticket, and posts the result. Not prints a suggestion. Actually does the thing.
 
-**Tool access** — connectors to your issue tracker, CI, database, chat. So the loop opens the PR, links the ticket, and posts the result. Not prints a suggestion. Actually does the thing. That's MCP.
+**An independent reviewer** — a model reviewing its own work will pass almost everything. You need a second agent held apart from the one that wrote the code, grading the output separately.
 
-**An independent reviewer** — a model reviewing its own work will pass almost everything. You need a second agent held apart from the one that wrote the code. That's BugBot.
+**State on disk** — something outside the conversation that remembers where things are up to. The model forgets between runs. A file doesn't.
 
-**State on disk** — something outside the conversation that remembers where things are up to. The model forgets between runs. The repo doesn't. Your Rules file doesn't. Your Skills don't.
-
-Six parts. Cursor ships all of them. Most people are using maybe two.
+Most people cobbling together an "agentic workflow" have maybe two of these. That's why it keeps breaking.
 
 ## Everyone's optimising the wrong thing
 
